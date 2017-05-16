@@ -27,7 +27,7 @@ class Location extends React.Component {
                   </li>
                 }
                 { segment.performances.map((performance, index) => {
-                  return <Performance key={`performance_${index}`} performance={ performance } />
+                  return <Performance key={`performance_${index}`} performance={ performance } to={`/locations/${location.id}/artists/${performance.id}`} />
                 }) }
               </ul>
             )

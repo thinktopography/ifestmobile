@@ -13,12 +13,11 @@ class Performance extends React.Component {
   }
 
   render() {
-
-    const { performance } = this.props
+    const { performance, to } = this.props
     const thumbnail = performance.photo ?`${performance.photo}?fit=crop&bg=FFFFFF&w=125&h=125&dpr=2` : '/images/logo.png'
     return (
       <li className="list-item">
-        <Link to={`/artists/${performance.id}`}>
+        <Link to={to}>
           <div className="list-item-image" style={{backgroundColor: '#C32021'}}>
             <img src={thumbnail}/>
           </div>

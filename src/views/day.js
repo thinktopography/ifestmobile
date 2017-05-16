@@ -23,7 +23,7 @@ class Day extends React.Component {
                 <li className="list-label" style={{backgroundColor: segment.location.color}}>{segment.location.title}</li>
                 { segment.sponsors.length > 0 && <li className="sponsor-list-label" style={{color: segment.location.color}}>Sponsored by {sponsor_names}</li> }
                 { segment.performances.map((performance, index) => {
-                  return <Performance key={`performance_${index}`} performance={ performance } />
+                  return <Performance key={`performance_${index}`} performance={ performance } to={`/dates/${day.id}/artists/${performance.id}`} />
                 }) }
               </ul>
             )

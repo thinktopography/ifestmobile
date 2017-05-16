@@ -46,10 +46,17 @@ class Artist extends React.Component {
   }
 
   componentDidMount() {
+    const { params } = this.props.match
     this.context.header.set({
       title: 'Artist Profile',
-      back: '/artists'
+      back: this._back(params)
     })
+  }
+
+  _back(params) {
+    if(params.location_id) return `/locations/${params.location_id}`
+    if(params.date_id) return `/dates/${params.date_id}`
+    return `/artists`
   }
 
 }

@@ -35,7 +35,7 @@ class Artists extends React.Component {
         { performances.length > 0 &&
           <ul className="list">
             {performances.sort(sort).map((performance, index) => {
-              return <Performance key={`performance_${index}`} performance={ performance } />
+              return <Performance key={`performance_${index}`} performance={ performance } to={`/artists/${performance.id}`} />
             })}
           </ul>
         }
