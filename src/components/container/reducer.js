@@ -13,7 +13,7 @@ export default (state = INITIAL_STATE, action) => {
   case actionTypes.LOAD_DATA_SUCCESS:
     return {
       status: 'success',
-      data: action.result
+      data: _.isString(action.result) ? JSON.parse(action.result) : action.result
     }
 
   case actionTypes.LOAD_DATA_FAILURE:

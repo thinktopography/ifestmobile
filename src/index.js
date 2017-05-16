@@ -27,6 +27,7 @@ const IFest = () => (
           <div className="application">
             <Header />
             <div className="body">
+              <Route exact path="/" component={ Days } />
               <Route exact path="/dates" component={ Days } />
               <Route exact path="/dates/:id" component={ Day } />
               <Route exact path="/locations" component={ Locations } />

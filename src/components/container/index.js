@@ -22,7 +22,8 @@ class Container extends React.Component {
   }
 
   componentDidMount() {
-    this.props.onLoadData()
+    const { onLoadData } = this.props
+    window.setTimeout(function() { onLoadData() }, 3000)
   }
 
 }
