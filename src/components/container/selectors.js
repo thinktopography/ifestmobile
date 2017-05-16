@@ -19,6 +19,16 @@ export const eventsSelector = (data, params) => data.special_events
 
 export const idSelector = (data, params) => params.id
 
+export const performanceSelector = createSelector(
+  [performancesSelector, idSelector],
+  (performances, id) => _.find(performances, { id: parseInt(id) })
+)
+
+export const sponsorSelector = createSelector(
+  [sponsorsSelector, performanceSelector],
+  (sponsors, performance) => _.find(sponsors, { day: parseInt(performance.day_id), stage: parseInt(performance.stage_id) })
+)
+
 export const locationSelector = createSelector(
   [locationsSelector, idSelector],
   (locations, id) => _.find(locations, { id: parseInt(id) })
@@ -54,7 +64,7 @@ export const performancesByDateSelector = createSelector(
       ...performances,
       {
         location: _.find(locations, { id: parseInt(location_id) }),
-        sponsor: _.find(sponsors, { stage: location_id, day: day_id }),
+        sponsors: _.filter(sponsors, { stage: parseInt(location_id), day: parseInt(day_id) }),
         performances: performancesForDateByLocation[location_id].sort(sort)
       }
     ], [])
@@ -82,7 +92,7 @@ export const performancesByLocationSelector = createSelector(
       ...performances,
       {
         day: _.find(days, { id: parseInt(day_id) }),
-        sponsor: _.find(sponsors, { stage: location_id, day: day_id }),
+        sponsors: _.filter(sponsors, { stage: parseInt(location_id), day: parseInt(day_id) }),
         performances: performancesForLocationByDate[day_id].sort(sort)
       }
     ], {})

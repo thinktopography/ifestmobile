@@ -1,20 +1,24 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Route, Link } from 'react-router-dom'
 
 class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      title: 'Mobile Schedule'
-    };
+
+  static propTypes = {
+    header: PropTypes.Object
   }
 
   render() {
-    let title = this.state.title.toUpperCase();
+    const { back, title } = this.props.header
     return (
       <div className="header">
+        { back &&
+          <Link to={ back } className="back">
+            <i className="fa fa-chevron-left"></i>
+          </Link>
+        }
         <h1><img src="/images/bannerlogo.png" /></h1>
-        <h2 key={title}>{this.trimTitle(title)}</h2>
+        <h2 key={ title }>{ this.trimTitle(title) }</h2>
         <a href="http://ithacafestival.org" className="web"><i className="fa fa-external-link"></i>Full Site</a>
       </div>
     )

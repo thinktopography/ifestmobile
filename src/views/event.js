@@ -1,10 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import _ from 'lodash'
 import moment from 'moment'
 import { connect } from 'react-redux'
 import { eventSelector } from '../components/container/selectors'
 
 class Event extends React.Component {
+
+  static contextTypes = {
+    header: PropTypes.object
+  }
 
   render() {
     const { event } = this.props
@@ -36,6 +41,13 @@ class Event extends React.Component {
         </div>
       </div>
     )
+  }
+
+  componentDidMount() {
+    this.context.header.set({
+      title: 'Event Details',
+      back: '/events'
+    })
   }
 
 }

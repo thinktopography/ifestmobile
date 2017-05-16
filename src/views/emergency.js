@@ -1,6 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class Emergency extends React.Component {
+
+  static contextTypes = {
+    header: PropTypes.object
+  }
 
   render() {
     return (

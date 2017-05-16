@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom'
 
 class Performance extends React.Component {
 
+  static contextTypes = {
+    header: PropTypes.object
+  }
+
   static PropTypes = {
     performance: PropTypes.aobjectrray
   }

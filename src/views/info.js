@@ -1,10 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Route, Link } from 'react-router-dom'
 import About from './about'
 import Faq from './faq'
 import Emergency from './emergency'
 
 class Info extends React.Component {
+
+  static contextTypes = {
+    header: PropTypes.object
+  }
 
   render() {
 

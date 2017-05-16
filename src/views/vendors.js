@@ -1,10 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Route, Link } from 'react-router-dom'
 import Food from './food'
 import Craft from './craft'
 import Commons from './commons'
 
 class Vendors extends React.Component {
+
+  static contextTypes = {
+    header: PropTypes.object
+  }
 
   render() {
 

@@ -7,6 +7,6 @@ server.use(express.static('public'))
 
 server.use((req, res) => res.sendFile(path.resolve('public', 'index.html')))
 
-server.listen(3000, () => {
-  console.log('Listening on 3000...')
+server.listen(3030, () => {
+  console.log('Listening on 3030...')
 })

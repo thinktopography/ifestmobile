@@ -7,6 +7,10 @@ import Performance from './performance'
 
 class Artists extends React.Component {
 
+  static contextTypes = {
+    header: PropTypes.object
+  }
+
   static PropTypes = {
     artists: PropTypes.array
   }

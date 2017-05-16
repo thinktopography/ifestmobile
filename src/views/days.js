@@ -10,6 +10,10 @@ class Days extends React.Component {
     days: PropTypes.array
   }
 
+  static contextTypes = {
+    header: PropTypes.object
+  }
+
   render() {
 
     const { days } = this.props

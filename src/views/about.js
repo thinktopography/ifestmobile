@@ -1,6 +1,11 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 class About extends React.Component {
+
+  static contextTypes = {
+    header: PropTypes.object
+  }
 
   render() {
     return (
@@ -28,7 +33,7 @@ class About extends React.Component {
           kazoo band to the nationally touring performer. The Ithaca Festival kicks off the summer with a fun, diverse,
           delicious, whimsical experience that we look forward to creating for many years to come.
         </p>
-        <h5><b>Who's Behind the Scenes?</b></h5>
+        <h5><b>Whos Behind the Scenes?</b></h5>
 
         <p>A volunteer Board of Directors establishes festival policy. A full-time Executive Director and Assistant
           Director plan the festival and several seasonal part-time staff members oversee various programs and projects.

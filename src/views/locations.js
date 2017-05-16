@@ -6,6 +6,10 @@ import { Link } from 'react-router-dom'
 
 class Locations extends React.Component {
 
+  static contextTypes = {
+    header: PropTypes.object
+  }
+
   static PropTypes = {
     locations: PropTypes.array
   }
