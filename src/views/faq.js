@@ -1,0 +1,29 @@
+import React from 'react'
+import { connect } from 'react-redux'
+
+class Faq extends React.Component {
+
+  render() {
+    const { questions } = this.props
+    return (
+      <div className="faq">
+        {questions.map((faq, index) => {
+          return (
+            <div key={`question_${index}`} className="question">
+              <h2>Q: {faq.question}</h2>
+              <div dangerouslySetInnerHTML={{__html: faq.answer}}/>
+              <hr/>
+            </div>
+          )
+        })}
+      </div>
+    )
+  }
+
+}
+
+const mapStateToProps = (state, props) => ({
+  questions: state.data.faq
+})
+
+export default connect(mapStateToProps)(Faq)
