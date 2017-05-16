@@ -28,11 +28,21 @@ class Artists extends React.Component {
             <input ref="searchField" type="text" placeholder="Search performers, genres, or locations" />
           </li>
         </ul>
-        <ul className="list">
-          {performances.sort(sort).map((performance, index) => {
-            return <Performance key={`performance_${index}`} performance={ performance } />
-          })}
-        </ul>
+        { performances.length > 0 &&
+          <ul className="list">
+            {performances.sort(sort).map((performance, index) => {
+              return <Performance key={`performance_${index}`} performance={ performance } />
+            })}
+          </ul>
+        }
+        { performances.length === 0 &&
+          <div className="empty-results-container">
+            <h3 className="text-muted">
+              No Results.<br/>
+              <small>Try another search, they're plenty fast!</small>
+            </h3>
+          </div>
+        }
       </div>
     )
 

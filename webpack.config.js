@@ -9,7 +9,8 @@ module.exports = (env) => ({
   },
   output: {
     path: path.resolve('public'),
-    filename: './js/application-[hash].min.js'
+    filename: 'js/application-[hash].min.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -27,7 +28,10 @@ module.exports = (env) => ({
     ]
   },
   plugins: [
-    new ExtractTextPlugin('./css/styles-[hash].min.css'),
+    new ExtractTextPlugin({
+      filename: 'css/styles-[hash].min.css',
+      publicPath: '/'
+    }),
     new HtmlWebpackPlugin({
       filename: path.resolve(__dirname, 'public', 'index.html'),
       template: path.resolve(__dirname, 'src', 'index.html'),

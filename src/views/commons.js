@@ -1,8 +1,10 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
 class Commons extends React.Component {
 
   render() {
+    const { vendors } = this.props
     return (
       <div className="list-container">
         <ul className="list">
@@ -10,12 +12,29 @@ class Commons extends React.Component {
             <input ref="searchField" type="text" placeholder="Search vendor name or category" />
           </li>
         </ul>
-        <ul className="list">
-        </ul>
+        { vendors.length > 0 &&
+          <ul className="list">
+            {vendors.sort(sort).map((vendor, index) => {
+              return <div>Vendor</div>
+            })}
+          </ul>
+        }
+        { vendors.length === 0 &&
+          <div className="empty-results-container">
+            <h3 className="text-muted">
+              No Results.<br/>
+              <small>Try another search, they're plenty fast!</small>
+            </h3>
+          </div>
+        }
       </div>
     )
   }
 
 }
 
-export default Commons
+const mapStateToProps = state => ({
+  vendors: state.data.food_vendors
+})
+
+export default connect(mapStateToProps)(Commons)

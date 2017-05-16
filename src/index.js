@@ -23,25 +23,25 @@ const IFest = () => (
   <Root>
     <Container>
       <Router>
-        <div className="application">
-          <Header />
-          <div className="body">
-            <CSSTransitionGroup  transitionName="fade" transitionAppear={true} transitionAppearTimeout={ 500 } transitionEnterTimeout={ 500 } transitionLeaveTimeout={ 500 }>
-              <Route exact path="/dates" component={ Days } key="dates" />
-              <Route exact path="/dates/:id" component={ Day } key="date" />
-              <Route exact path="/locations" component={ Locations } key="locations" />
-              <Route exact path="/locations/:id" component={ Location } key="location" />
-              <Route exact path="/artists" component={ Artists } key="artists" />
-              <Route exact path="/artists/:id" component={ Artist } key="artist" />
-              <Route exact path="/map" component={ Map } key="map" />
-              <Route exact path="/events" component={ Events } key="events" />
-              <Route exact path="/events/:id" component={ Event } key="event" />
-              <Route path="/vendors" component={ Vendors } key="vendors" />
-              <Route path="/info" component={ Info } key="info" />
-            </CSSTransitionGroup>
+        <Route render={({ location }) => (
+          <div className="application">
+            <Header />
+            <div className="body">
+              <Route exact path="/dates" component={ Days } />
+              <Route exact path="/dates/:id" component={ Day } />
+              <Route exact path="/locations" component={ Locations } />
+              <Route exact path="/locations/:id" component={ Location } />
+              <Route exact path="/artists" component={ Artists } />
+              <Route exact path="/artists/:id" component={ Artist } />
+              <Route exact path="/map" component={ Map } />
+              <Route exact path="/events" component={ Events } />
+              <Route exact path="/events/:id" component={ Event } />
+              <Route path="/vendors" component={ Vendors } />
+              <Route path="/info" component={ Info } />
+            </div>
+            <Footer />
           </div>
-          <Footer />
-        </div>
+        )}/>
       </Router>
     </Container>
   </Root>

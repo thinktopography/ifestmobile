@@ -20,7 +20,7 @@ class Info extends React.Component {
           { items.map((item, index) => {
             return (
               <li key={`tab_${index}`}>
-                <Route path={item.link} children={({ match }) => (
+                <Route exact path={item.link} children={({ match }) => (
                   <Link to={item.link} className={match ? 'active' : ''}>
                     {item.label}
                   </Link>

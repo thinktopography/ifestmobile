@@ -50,11 +50,12 @@ export const performancesByDateSelector = createSelector(
       ]
     }), {})
 
-    return Object.keys(performancesForDateByLocation).reduce((performances, stage_id) => [
+    return Object.keys(performancesForDateByLocation).reduce((performances, location_id) => [
       ...performances,
       {
-        location: _.find(locations, { id: parseInt(stage_id) }),
-        performances: performancesForDateByLocation[stage_id].sort(sort)
+        location: _.find(locations, { id: parseInt(location_id) }),
+        sponsor: _.find(sponsors, { stage: location_id, day: day_id }),
+        performances: performancesForDateByLocation[location_id].sort(sort)
       }
     ], [])
 
@@ -81,6 +82,7 @@ export const performancesByLocationSelector = createSelector(
       ...performances,
       {
         day: _.find(days, { id: parseInt(day_id) }),
+        sponsor: _.find(sponsors, { stage: location_id, day: day_id }),
         performances: performancesForLocationByDate[day_id].sort(sort)
       }
     ], {})
