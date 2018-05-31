@@ -15,9 +15,15 @@ class Artists extends React.Component {
     artists: PropTypes.array
   }
 
+  state = {
+    q: ''
+  }
+
   render() {
 
-    const { performances } = this.props
+    const { q } = this.state
+
+    const filter = (item) => (q === '' || item.title.toLowerCase().search(q.toLowerCase()) >= 0)
 
     const sort = (a,b) => {
       if(a.title.toLowerCase() < b.title.toLowerCase()) return -1
@@ -25,18 +31,20 @@ class Artists extends React.Component {
       return 0
     }
 
+    const performances = this.props.performances.slice().filter(filter).sort(sort)
+
     return (
       <div className="list-container">
         <ul className="list">
           <li className="list-search">
-            <input ref="searchField" type="text" placeholder="Search performers, genres, or locations" />
+            <input ref={ node => this.input = node } type="text" placeholder="Search performers, genres, or locations" onChange={ this._handleChange.bind(this) } />
           </li>
         </ul>
         { performances.length > 0 &&
           <ul className="list">
-            {performances.sort(sort).map((performance, index) => {
+            { performances.map((performance, index) => {
               return <Performance key={`performance_${index}`} performance={ performance } to={`/artists/${performance.id}`} />
-            })}
+            }) }
           </ul>
         }
         { performances.length === 0 &&
@@ -50,6 +58,12 @@ class Artists extends React.Component {
       </div>
     )
 
+  }
+
+  _handleChange() {
+    this.setState({
+      q: this.input.value
+    })
   }
 
 }

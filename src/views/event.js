@@ -14,7 +14,7 @@ class Event extends React.Component {
   render() {
     const { event } = this.props
     let styleProps = {
-      backgroundImage: `url(${this.props.event.photo})`,
+      backgroundImage: `url(${event.photo ? `${event.photo}?fit=crop&bg=FFFFFF&w=125&h=125&dpr=2` : '/images/logo.png'})`,
       backgroundPosition: 'center center',
       backgroundSize: 'contain',
       backgroundRepeat: 'no-repeat'

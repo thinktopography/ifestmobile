@@ -8,19 +8,43 @@ class Commons extends React.Component {
     header: PropTypes.object
   }
 
+  state = {
+    q: ''
+  }
+
   render() {
-    const { vendors } = this.props
+
+    const { q } = this.state
+
+    const filter = (item) => (q === '' || item.name.toLowerCase().search(q.toLowerCase()) >= 0)
+
+    const sort = (a,b) => {
+      if(a.name.toLowerCase() < b.name.toLowerCase()) return -1
+      if(a.name.toLowerCase() > b.name.toLowerCase()) return 1
+      return 0
+    }
+
+    const vendors = this.props.vendors.slice().filter(filter).sort(sort)
+
     return (
       <div className="list-container">
         <ul className="list">
           <li className="list-search">
-            <input ref="searchField" type="text" placeholder="Search vendor name or category" />
+            <input ref={ node => this.input = node } type="text" placeholder="Search vendor name or category" onChange={ this._handleChange.bind(this) } />
           </li>
         </ul>
         { vendors.length > 0 &&
           <ul className="list">
-            {vendors.sort(sort).map((vendor, index) => {
-              return <div>Vendor</div>
+            { vendors.map((vendor, index) => {
+              return (
+                <li key={`vendor_${index}`} className="list-item">
+                  <div className="list-item-description">
+                    <p className="time">{vendor.booth ? `Booth ${vendor.booth}` : ''}</p>
+                    <h4>{vendor.name}</h4>
+                    <p className="genre">{vendor.category}</p>
+                  </div>
+                </li>
+              )
             })}
           </ul>
         }
@@ -34,12 +58,19 @@ class Commons extends React.Component {
         }
       </div>
     )
+
+  }
+
+  _handleChange() {
+    this.setState({
+      q: this.input.value
+    })
   }
 
 }
 
 const mapStateToProps = state => ({
-  vendors: state.data.food_vendors
+  vendors: state.data.commons_vendors
 })
 
 export default connect(mapStateToProps)(Commons)

@@ -19,7 +19,9 @@ class Events extends React.Component {
               <li key={`event${index}`} className="list-item">
                 <Link to={`/events/${event.id}`}>
                   <div className="list-item-description">
-                    <img src={event.photo + '?fit=crop&bg=FFFFFF&w=125&h=125&dpr=2'} className="event"/>
+                    { event.photo &&
+                      <img src={`${event.photo}?fit=crop&bg=FFFFFF&w=125&h=125&dpr=2`} className="event"/>
+                    }
                     <h4>{event.title}</h4>
                     <p className="location">
                       <strong>{event.venue}</strong>

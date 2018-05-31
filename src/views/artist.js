@@ -13,8 +13,8 @@ class Artist extends React.Component {
 
   render() {
     const { performance, sponsor } = this.props
-    const { description, long_description, photo, stage, time, title } = performance
-    const day = moment(new Date(performance.day))
+    const { description, long_description, photo, stage, time, title, url } = performance
+    const day = moment(`${performance.day.split(',')[1]}, 2018`)
     const styleProps = {
       backgroundImage: photo ? `url(${photo}?w=400?dpr=2)` : 'url(/images/logo.png)',
       backgroundPosition: 'center 33%',
@@ -37,9 +37,18 @@ class Artist extends React.Component {
               {stage}
             </div>
           </div>
-          <br />
+          { sponsor &&
+            <div className="performer-sponsor">
+              <p>
+                Sponsored by
+                <a href={ sponsor.url }>{ sponsor.name }</a>
+              </p>
+            </div>
+          }
           <p dangerouslySetInnerHTML={{__html: long_description}}/>
-          { sponsor && sponsor.title }
+          { url &&
+            <a href={ url } target="_blank" className="performer-link">Visit performer website</a>
+          }
         </div>
       </div>
     )

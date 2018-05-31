@@ -10,7 +10,7 @@ class Map extends React.Component {
   render() {
     return (
       <div className="map" ref="map">
-        <img src="http://cdn.sitemandala.com/assets/109009/map.jpg" />
+        <img src="/images/map.png" />
       </div>
     )
   }

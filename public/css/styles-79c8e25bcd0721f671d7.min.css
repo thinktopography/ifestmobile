@@ -19,8 +19,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
   max-width: 500px;
   width: 100%;
   height: auto;
@@ -289,7 +288,7 @@ div.stage-tiles a {
 div.stage-tiles a.dewitt {
   background-color: #295DAB;
 }
-div.stage-tiles a.pressbay {
+div.stage-tiles a.ithacajournal {
   background-color: #C32021;
 }
 div.stage-tiles a.cayugast {
@@ -298,7 +297,7 @@ div.stage-tiles a.cayugast {
 div.stage-tiles a.csma {
   background-color: #008741;
 }
-div.stage-tiles a.ithacaunderground {
+div.stage-tiles a.commons {
   background-color: #EF712E;
 }
 div.stage-tiles h4 {
@@ -419,9 +418,14 @@ div.performer div.performer-details h2 {
 div.performer div.performer-details p {
   color: #888;
 }
+div.performer div.performer-sponsor a {
+  margin-left: 5px;
+  text-decoration: underline;
+}
 div.performer div.performer-performance {
   overflow: hidden;
   background-color: #EEE;
+  margin-bottom: 10px;
 }
 div.performer div.performer-performance-date {
   float: left;
@@ -438,9 +442,26 @@ div.performer div.performer-performance-date h3 {
   margin: 0;
   text-align: center;
 }
+div.performer div.performer-performance-details strong {
+  color: #000;
+  font-weight: normal;
+}
 div.performer div.performer-performance-details {
   margin: 0 0 0 75px;
+  padding: 15px 10px;
+  color: #888;
+}
+div.performer a.performer-link {
+  text-decoration: none !important;
+  border-radius: 5px;
   padding: 10px;
+  background-color: #c32021;
+  color: #FFF;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  display: block;
+  margin-bottom: 10px;
 }
 div.map {
   position: fixed;
@@ -515,7 +536,7 @@ div.date-headings-wrapper {
   p,
   li {
     font-size: 1.4rem;
-    line-height: 1.8rem;
+    line-height: 2.2rem;
   }
   div.list-item-image {
     width: 100px;

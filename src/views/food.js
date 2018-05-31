@@ -8,19 +8,43 @@ class Food extends React.Component {
     header: PropTypes.object
   }
 
+  state = {
+    q: ''
+  }
+
   render() {
-    const { vendors } = this.props
+
+    const { q } = this.state
+
+    const filter = (item) => (q === '' || item.title.toLowerCase().search(q.toLowerCase()) >= 0)
+
+    const sort = (a,b) => {
+      if(a.title.toLowerCase() < b.title.toLowerCase()) return -1
+      if(a.title.toLowerCase() > b.title.toLowerCase()) return 1
+      return 0
+    }
+
+    const vendors = this.props.vendors.slice().filter(filter).sort(sort)
+
     return (
       <div className="list-container">
         <ul className="list">
           <li className="list-search">
-            <input ref="searchField" type="text" placeholder="Search vendor name or cuisine" />
+            <input ref={ node => this.input = node } type="text" placeholder="Search vendor name or cuisine" onChange={ this._handleChange.bind(this) } />
           </li>
         </ul>
         { vendors.length > 0 &&
           <ul className="list">
-            {vendors.sort(sort).map((vendor, index) => {
-              return <div>Vendor</div>
+            { vendors.map((vendor, index) => {
+              return (
+                <li key={`vendor_${index}`} className="list-item">
+                  <div className="list-item-description">
+                    <p className="time"></p>
+                    <h4>{vendor.title}</h4>
+                    <p className="genre">{vendor.category}</p>
+                  </div>
+                </li>
+              )
             })}
           </ul>
         }
@@ -34,6 +58,13 @@ class Food extends React.Component {
         }
       </div>
     )
+
+  }
+
+  _handleChange() {
+    this.setState({
+      q: this.input.value
+    })
   }
 
 }

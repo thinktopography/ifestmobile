@@ -1,9 +1,19 @@
 import { createSelector } from 'reselect'
 import _ from 'lodash'
+import moment from 'moment'
 
 const sort = (a,b) => {
-  if(a.time < b.time) return -1
-  if(a.time > b.time) return 1
+  const [,a_start_hour,a_start_min,a_end_hour,a_end_min,a_apm] = a.time.match(/([\d]*):([\d]*)\s*-\s*([\d]*):([\d]*)\s*([APM]{2})/)
+  const [,b_start_hour,b_start_min,b_end_hour,b_end_min,b_apm] = b.time.match(/([\d]*):([\d]*)\s*-\s*([\d]*):([\d]*)\s*([APM]{2})/)
+  const a_day = (a_apm === 'AM' && a_start_hour === '12') ? '02' : '01'
+  const b_day = (b_apm === 'AM' && b_start_hour === '12') ? '02' : '01'
+  const a_start_mil_hour = (a_apm === 'PM' && parseInt(a_start_hour) !== 12) ? parseInt(a_start_hour) + 12 : a_start_hour
+  const b_start_mil_hour = (b_apm === 'PM' && parseInt(b_start_hour) !== 12) ? parseInt(b_start_hour) + 12 : b_start_hour
+  const a_time = moment(`2018-01-${a_day} ${a_start_mil_hour}:${a_start_min}`)
+  const b_time = moment(`2018-01-${b_day} ${b_start_mil_hour}:${b_start_min}`)
+  console.log(a.title,a_time,b.title,b_time)
+  if(a_time.toDate() < b_time.toDate()) return -1
+  if(a_time.toDate() > b_time.toDate()) return 1
   return 0
 }
 

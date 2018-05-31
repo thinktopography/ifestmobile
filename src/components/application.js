@@ -1,12 +1,12 @@
-import React from 'react'
 import PropTypes from 'prop-types'
 import Footer from './footer'
 import Header from './header'
+import React from 'react'
 
 class Application extends React.Component {
 
   static childContextTypes = {
-     header: PropTypes.object
+    header: PropTypes.object
   }
 
   constructor(props) {
@@ -26,7 +26,7 @@ class Application extends React.Component {
       <div className="application">
         <Header header={ header } />
         <div className="body">
-          {children}
+          { children }
         </div>
         <Footer />
       </div>
