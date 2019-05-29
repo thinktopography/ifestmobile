@@ -50,8 +50,7 @@ class About extends React.Component {
         </p>
 
         <p>This mobile website was developed by <a href="http://thinktopography.com" target="_blank">Think
-          Topography</a> and is powered by <br/><a href="http://sitemandala.com" target="_blank"><img
-          src="/images/SM-on-white.png" alt="Site Mandala Logo" width="200"/></a></p>
+          Topography</a> </p>
       </div>
     )
   }

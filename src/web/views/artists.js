@@ -4,6 +4,7 @@ import moment from 'moment'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import Performance from './performance'
+import { performancesSelector } from '../components/container/selectors'
 
 class Artists extends React.Component {
 
@@ -43,7 +44,7 @@ class Artists extends React.Component {
         { performances.length > 0 &&
           <ul className="list">
             { performances.map((performance, index) => {
-              return <Performance key={`performance_${index}`} performance={ performance } to={`/artists/${performance.id}`} />
+              return <Performance key={`performance_${index}`} day={ true } performance={ performance } to={`/artists/${performance.id}`} />
             }) }
           </ul>
         }
@@ -68,8 +69,8 @@ class Artists extends React.Component {
 
 }
 
-const mapStateToProps = state => ({
-  performances: state.data.performances
+const mapStateToProps = (state, props) => ({
+  performances: performancesSelector(state.data, props)
 })
 
 export default connect(mapStateToProps)(Artists)

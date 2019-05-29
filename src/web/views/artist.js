@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import _ from 'lodash'
 import moment from 'moment'
 import { connect } from 'react-redux'
 import { performanceSelector, sponsorSelector } from '../components/container/selectors'
@@ -11,30 +10,36 @@ class Artist extends React.Component {
     header: PropTypes.object
   }
 
+  static propTypes = {
+    match: PropTypes.object,
+    performance: PropTypes.object,
+    sponsor: PropTypes.object
+  }
+
   render() {
     const { performance, sponsor } = this.props
-    const { description, long_description, photo, stage, time, title, url } = performance
-    const day = moment(`${performance.day.split(',')[1]}, 2018`)
+    const { description, long_description, photo, stage, title, url } = performance
+    const day = moment(performance.day.title)
     const styleProps = {
-      backgroundImage: photo ? `url(${photo}?w=400?dpr=2)` : 'url(/images/logo.png)',
+      backgroundColor: '#C32021',
       backgroundPosition: 'center 33%',
+      backgroundImage: photo ? `url(${photo})` : 'url(/images/logo.png)',
       backgroundSize: 'cover'
-    };
-
+    }
     return (
       <div className="performer">
         <div className="performer-image" style={styleProps} />
         <div className="performer-details">
           <h2>{title}</h2>
-          <p>{description}</p>
+          <div dangerouslySetInnerHTML={{__html: description}} />
           <div className="performer-performance">
             <div className="performer-performance-date">
               <h4>{day.format('MMM')}</h4>
               <h3>{day.format('Do')}</h3>
             </div>
             <div className="performer-performance-details">
-              {time}<br />
-              {stage}
+              { performance.start_time } - { performance.end_time }<br />
+              {stage.title}
             </div>
           </div>
           { sponsor &&
@@ -45,7 +50,7 @@ class Artist extends React.Component {
               </p>
             </div>
           }
-          <p dangerouslySetInnerHTML={{__html: long_description}}/>
+          <div dangerouslySetInnerHTML={{__html: long_description}} />
           { url &&
             <a href={ url } target="_blank" className="performer-link">Visit performer website</a>
           }
@@ -65,7 +70,7 @@ class Artist extends React.Component {
   _back(params) {
     if(params.location_id) return `/locations/${params.location_id}`
     if(params.date_id) return `/dates/${params.date_id}`
-    return `/artists`
+    return '/artists'
   }
 
 }

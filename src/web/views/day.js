@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import _ from 'lodash'
 import { connect } from 'react-redux'
 import { daySelector, performancesByDateSelector } from '../components/container/selectors'
 import Performance from './performance'
+import moment from 'moment'
 
 class Day extends React.Component {
 
@@ -11,31 +11,34 @@ class Day extends React.Component {
     header: PropTypes.object
   }
 
+  static propTypes = {
+    day: PropTypes.object,
+    performances: PropTypes.object
+  }
+
   render() {
     const { day, performances } = this.props
     return (
-      <div>
-        <div>
-          { performances.map((segment, index) => {
-            const sponsor_names = (segment.sponsors) ? segment.sponsors.map(sponsor => sponsor.name).join(' and ') : null
-            return (
-              <ul key={`location_${index}`} className="list">
-                <li className="list-label" style={{backgroundColor: segment.location.color}}>{segment.location.title}</li>
-                { segment.sponsors.length > 0 && <li className="sponsor-list-label" style={{color: segment.location.color}}>Sponsored by {sponsor_names}</li> }
-                { segment.performances.map((performance, index) => {
-                  return <Performance key={`performance_${index}`} performance={ performance } to={`/dates/${day.id}/artists/${performance.id}`} />
-                }) }
-              </ul>
-            )
-          }) }
-        </div>
+      <div className="list-container">
+        { performances.map((segment, index) => {
+          const sponsor_names = (segment.sponsors) ? segment.sponsors.map(sponsor => sponsor.name).join(' and ') : null
+          return (
+            <ul key={`location_${index}`} className="list">
+              <li className={`list-label ${segment.location.title.replace(' ', '-').toLowerCase()}`}>{segment.location.title}</li>
+              { segment.sponsors.length > 0 && <li className="sponsor-list-label" style={{color: segment.location.color}}>Sponsored by {sponsor_names}</li> }
+              { segment.performances.map((performance, index) => {
+                return <Performance key={`performance_${index}`} performance={ performance } to={`/dates/${day.id}/artists/${performance.id}`} />
+              }) }
+            </ul>
+          )
+        }) }
       </div>
     )
   }
 
   componentDidMount() {
     this.context.header.set({
-      title: this.props.day.title,
+      title: moment(this.props.day.title).format('dddd, MMM DD'),
       back: '/dates'
     })
   }

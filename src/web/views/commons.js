@@ -8,6 +8,10 @@ class Commons extends React.Component {
     header: PropTypes.object
   }
 
+  static propTypes = {
+    vendors: PropTypes.array
+  }
+
   state = {
     q: ''
   }
@@ -30,7 +34,7 @@ class Commons extends React.Component {
       <div className="list-container">
         <ul className="list">
           <li className="list-search">
-            <input ref={ node => this.input = node } type="text" placeholder="Search vendor name or category" onChange={ this._handleChange.bind(this) } />
+            <input ref={ node => this.input = node } type="text" placeholder="Search vendor name" onChange={ this._handleChange.bind(this) } />
           </li>
         </ul>
         { vendors.length > 0 &&
@@ -41,7 +45,6 @@ class Commons extends React.Component {
                   <div className="list-item-description">
                     <p className="time">{vendor.booth ? `Booth ${vendor.booth}` : ''}</p>
                     <h4>{vendor.name}</h4>
-                    <p className="genre">{vendor.category}</p>
                   </div>
                 </li>
               )
@@ -52,7 +55,7 @@ class Commons extends React.Component {
           <div className="empty-results-container">
             <h3 className="text-muted">
               No Results.<br/>
-              <small>Try another search, they're plenty fast!</small>
+              <small>Try another search</small>
             </h3>
           </div>
         }

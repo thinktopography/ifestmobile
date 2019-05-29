@@ -27,7 +27,7 @@ class Days extends React.Component {
     return (
       <div className='date-tiles'>
         { days.sort(sort).map((day, index) => {
-          const timestamp = moment(new Date(day.title))
+          const timestamp = moment(day.title)
           return (
             <Link key={`day_${index}`} to={`/dates/${day.id}`} className={timestamp.format('dddd').replace(' ', '-').toLowerCase()}>
               <div className='date-headings-wrapper'>

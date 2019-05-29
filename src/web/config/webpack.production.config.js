@@ -54,7 +54,7 @@ const config = {
     runtimeChunk: true
   },
   output: {
-    path: path.resolve('dist','web','public'),
+    path: path.resolve('dist'),
     filename: path.join('js', 'bundle-[hash].min.js'),
     publicPath: '/'
   },
@@ -62,10 +62,10 @@ const config = {
     new DynamicPlugin(),
     new CopyPlugin([{
       from: path.resolve('src','web','public'),
-      to: path.resolve('dist','web','public')
+      to: path.resolve('dist')
     }]),
     new MiniCssExtractPlugin({
-      path: path.resolve('dist','web','public'),
+      path: path.resolve('dist'),
       filename: path.join('css', 'bundle-[hash].min.css'),
       publicPath: '/'
     }),

@@ -25,13 +25,11 @@ class Locations extends React.Component {
 
     return (
       <div className="stage-tiles">
-        { locations.sort(sort).map((location, index) => {
-          return (
-            <Link key={`location_${index}`} to={`/locations/${location.id}`} className={location.title.replace(' ', '-').toLowerCase()}>
-              <h4>{location.title}</h4>
-            </Link>
-          )
-        }) }
+        { locations.sort(sort).map((location, index) => (
+          <Link key={`location_${index}`} to={`/locations/${location.id}`} className={location.title.replace(' ', '-').toLowerCase()}>
+            <h4>{location.title}</h4>
+          </Link>
+        )) }
       </div>
     )
 

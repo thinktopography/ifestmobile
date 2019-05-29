@@ -3,20 +3,25 @@ import _ from 'lodash'
 import moment from 'moment'
 
 const sort = (a,b) => {
-  const [,a_start_hour,a_start_min,a_end_hour,a_end_min,a_apm] = a.time.match(/([\d]*):([\d]*)\s*-\s*([\d]*):([\d]*)\s*([APM]{2})/)
-  const [,b_start_hour,b_start_min,b_end_hour,b_end_min,b_apm] = b.time.match(/([\d]*):([\d]*)\s*-\s*([\d]*):([\d]*)\s*([APM]{2})/)
-  const a_day = (a_apm === 'AM' && a_start_hour === '12') ? '02' : '01'
-  const b_day = (b_apm === 'AM' && b_start_hour === '12') ? '02' : '01'
-  const a_start_mil_hour = (a_apm === 'PM' && parseInt(a_start_hour) !== 12) ? parseInt(a_start_hour) + 12 : a_start_hour
-  const b_start_mil_hour = (b_apm === 'PM' && parseInt(b_start_hour) !== 12) ? parseInt(b_start_hour) + 12 : b_start_hour
-  const a_time = moment(`2018-01-${a_day} ${a_start_mil_hour}:${a_start_min}`)
-  const b_time = moment(`2018-01-${b_day} ${b_start_mil_hour}:${b_start_min}`)
-  if(a_time.toDate() < b_time.toDate()) return -1
-  if(a_time.toDate() > b_time.toDate()) return 1
+  const a_start = moment(`${a.day.title} ${a.start_time}`)
+  const b_start = moment(`${b.day.title} ${b.start_time}`)
+  if(a_start < b_start) return -1
+  if(a_start > b_start) return 1
   return 0
 }
 
-export const performancesSelector = (data, params) => data.performances
+export const performancesSelector = (data, params) => data.performances.filter(performance => {
+  return performance.day_id !== null && performance.stage_id !== null
+}).map(performance => {
+  const stage = _.find(data.locations, { id: performance.stage_id })
+  const day = _.find(data.days, { id: performance.day_id })
+  day.name = moment(day.title).format('dddd')
+  return {
+    ...performance,
+    stage,
+    day
+  }
+})
 
 export const locationsSelector = (data, params) => data.locations
 
@@ -29,8 +34,12 @@ export const eventsSelector = (data, params) => data.special_events
 export const idSelector = (data, params) => params.id
 
 export const performanceSelector = createSelector(
-  [performancesSelector, idSelector],
-  (performances, id) => _.find(performances, { id: parseInt(id) })
+  [performancesSelector, daysSelector, locationsSelector, idSelector],
+  (performances, days, locations, id) => {
+    id = parseInt(id)
+    const performance = _.find(performances, { id })
+    return performance
+  }
 )
 
 export const sponsorSelector = createSelector(
@@ -69,12 +78,12 @@ export const performancesByDateSelector = createSelector(
       ]
     }), {})
 
-    return Object.keys(performancesForDateByLocation).reduce((performances, location_id) => [
+    return Object.keys(performancesForDateByLocation).reduce((performances, stage_id) => [
       ...performances,
       {
-        location: _.find(locations, { id: parseInt(location_id) }),
-        sponsors: _.filter(sponsors, { stage: parseInt(location_id), day: parseInt(day_id) }),
-        performances: performancesForDateByLocation[location_id].sort(sort)
+        location: _.find(locations, { id: parseInt(stage_id) }),
+        sponsors: _.filter(sponsors, { stage_id: parseInt(stage_id), day_id: parseInt(day_id) }),
+        performances: performancesForDateByLocation[stage_id].sort(sort)
       }
     ], [])
 

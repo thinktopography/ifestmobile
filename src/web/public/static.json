@@ -2,14 +2,18 @@
  "days": [
   {
    "id": 1,
-   "title": "2019-05-31"
+   "title": "2019-05-30"
   },
   {
    "id": 2,
-   "title": "2019-06-01"
+   "title": "2019-05-31"
   },
   {
    "id": 3,
+   "title": "2019-06-01"
+  },
+  {
+   "id": 4,
    "title": "2019-06-02"
   }
  ],
@@ -24,7 +28,7 @@
   },
   {
    "id": 3,
-   "title": "Commons"
+   "title": "Monks On The Commons"
   },
   {
    "id": 4,
@@ -39,7 +43,104 @@
    "title": "Trolly Circle"
   }
  ],
- "sponsors": [],
+ "sponsors": [
+  {
+   "name": "Cayuga Radio Group",
+   "url": "https://cyradiogroup.com",
+   "stage_id": 1,
+   "day_id": 3
+  },
+  {
+   "name": "Cayuga Radio Group",
+   "url": "https://cyradiogroup.com",
+   "stage_id": 1,
+   "day_id": 4
+  },
+  {
+   "name": "WITH radio",
+   "url": "https://www.withradio.org",
+   "stage_id": 1,
+   "day_id": 1
+  },
+  {
+   "name": "WITH radio",
+   "url": "https://www.withradio.org",
+   "stage_id": 1,
+   "day_id": 2
+  },
+  {
+   "name": "Ithaca Beer Co.",
+   "url": "https://www.ithacabeer.com",
+   "stage_id": 1,
+   "day_id": 2
+  },
+  {
+   "name": "Ithaca Beer Co.",
+   "url": "https://www.ithacabeer.com",
+   "stage_id": 1,
+   "day_id": 3
+  },
+  {
+   "name": "Ithaca Beer Co.",
+   "url": "https://www.ithacabeer.com",
+   "stage_id": 1,
+   "day_id": 4
+  },
+  {
+   "name": "Dandy Mart",
+   "url": "https://www.godandy.com",
+   "stage_id": 2,
+   "day_id": 2
+  },
+  {
+   "name": "Dandy Mart",
+   "url": "https://www.godandy.com",
+   "stage_id": 2,
+   "day_id": 3
+  },
+  {
+   "name": "Dandy Mart",
+   "url": "https://www.godandy.com",
+   "stage_id": 2,
+   "day_id": 4
+  },
+  {
+   "name": "CSP Management",
+   "url": "https://cspmanagement.com",
+   "stage_id": 4,
+   "day_id": 2
+  },
+  {
+   "name": "CSP Management",
+   "url": "https://cspmanagement.com",
+   "stage_id": 4,
+   "day_id": 3
+  },
+  {
+   "name": "CSP Management",
+   "url": "https://cspmanagement.com",
+   "stage_id": 4,
+   "day_id": 4
+  },
+  {
+   "name": "GIAC",
+   "url": "https://www.cityofithaca.org/327/Greater-Ithaca-Activities-Center",
+   "stage_id": 4,
+   "day_id": 2
+  },
+  {
+   "name": "GIAC",
+   "url": "https://www.cityofithaca.org/327/Greater-Ithaca-Activities-Center",
+   "stage_id": 4,
+   "day_id": 3
+  },
+  {
+   "name": "GIAC",
+   "url": "https://www.cityofithaca.org/327/Greater-Ithaca-Activities-Center",
+   "stage_id": 4,
+   "day_id": 4
+  }
+ ],
  "food_vendors": [
   {
    "title": "Agava",
@@ -528,787 +629,1218 @@
    "category": "Painting"
   }
  ],
- "commons_vendors": [
-  {
-   "title": "Maple River Syrup",
-   "category": "Local Foods"
-  }
- ],
+ "commons_vendors": [],
  "performances": [
   {
-   "title": "Alexander Bradshaw Band",
-   "description": "<p>Singer/Songwriter</p>",
-   "long_description": "<p>Upstate Performer/Singer/Songwriter who is in the middle of writing and recording their first solo album</p>",
-   "url": "https://www.facebook.com/alexanderabelbradshaw/",
-   "stage": "Bernie Milton",
-   "day": "Friday",
-   "time": "07:00 AM - 07:45 AM",
-   "photo": {
-    "text": "https://www.dropbox.com/s/u4lbb9rxwuxkd1t/gunpoets.jpg?dl=0",
-    "hyperlink": "https://www.dropbox.com/s/u4lbb9rxwuxkd1t/gunpoets.jpg?dl=0"
-   }
-  },
-  {
-   "title": "The Oxtet",
-   "description": "<p>jazz quintet, of drums, bass, vibes, trumpet, and keyboards</p>",
-   "long_description": "<p>osh Oxford graduated in 2007 with a degree in percussion performance from Ithaca College. Seeking an outlet for his keyboard playing and love of vintage keyboards and synthesizers, Josh started a jazz quintet, consisting of drums, bass, vibes, trumpet, and Oxford on keyboards. The OXtet quickly evolved into something far more devious than simply playing jazz standards. Over the years guitar and sax was added to fill out the ensemble and create the unique blend of acoustic and electronic instruments. The music takes from the rhythmic complexities inherent in the music of Frank Zappa and the Mahavishnu Orchestra; the funk aspects of 80s Miles Davis; and compositional techniques used in modern classical music, such as atonality and 12-Tone serialism. The ensemble mainly uses Ithaca College students to perform the music, after Josh’s tragic car accident. Occasionally the original group will perform in the Ithaca area.</p>",
-   "url": "https://www.joshoxford.com/oxtet",
-   "stage": "Bernie Milton",
-   "day": "Friday",
-   "time": "08:00 AM - 08:45 AM"
-  },
-  {
-   "title": "Janet Batch",
-   "description": "<p>Delightfully dark lounge sweetness.</p>",
-   "long_description": "<p>Janet Batch is a singer songwriter who resides in the Finger Lakes Region of central New York State.  Her first album, “A Good Woman is Hard to Find” has garnered her praise from country/folk fans and connoisseurs alike.  Janet's musical style has been referred to as \"country with an art degree\" and she has been endeared as \"the voice of the hills\".  One part Stevie Nicks, two parts Johnny Cash, she sings, unabashed, of death, romance, and the wondering of what went wrong.  Her songs are an illustration of the pendulum that swings between joy and heartache.</p>",
-   "stage": "Bernie Milton",
-   "day": "Friday",
-   "time": "09:00 AM - 09:50 AM"
-  },
-  {
-   "title": "Bronwen Exter",
-   "description": "<p>Delightfully dark lounge sweetness.</p>",
-   "long_description": "<p>Turns out, moving home is complicated. You bring along what you hoped to leave behind, and don’t necessarily find what you remembered best about a place. The granddaughter of a Ukrainian communist, a Disneyland-tire maker, an Yves St. Laurent wedding dress model and the Chief Statistician for President Lyndon Johnson, Exter’s life has always been filled with stories and characters. At the age of six, from her bedroom in rural upstate New York, she recorded her first songs. She remembers the bright, grass-green carpet scrap and the old tape-recorder sitting on it. They were mostly songs about cowgirls.</p>",
-   "url": "http://www.bronwenexter.com",
-   "stage": "Bernie Milton",
-   "day": "Friday",
-   "time": "10:10 AM - 11:00 AM"
-  },
-  {
-   "title": "The Analogue Sons",
-   "description": "<p>dub, soul, daning vibes, muilti-cultural roxkers</p>",
-   "long_description": "<p>Lee Hamilton - saxophones (orig. JBB, Tribulations, JATAS, Super 20)</p><p>\nMichael Stark - organ, bass, synth (JATAS, TZAR, Super 20, MSZM, Wingnut & more) \n\nLars Burggren - drumkit (JATAS, Gunpoets)\n\nAaron Speiser - dubs, melodica (JATAS)</p>",
-   "url": "https://www.facebook.com/theanaloguesons/",
-   "stage": "Bernie Milton",
-   "day": "Friday",
-   "time": "11:20 AM - 12:00 PM"
-  },
-  {
+   "id": 1,
    "title": "¡Viva Mayhem!",
    "description": "<p>High-octane and infectious</p>",
    "long_description": "<p>¡Viva Mayhem! invites you to dance, sing, and wear your heart on your sleeve. An eight-piece post-wave ska band out of Ithaca, NY, ¡VM! has a stellar female lead, a rockin' rhythm section and a tight hornline. Together, their sound is raw, original, and true.</p>",
    "url": "https://vivamayhem.com/home/",
-   "stage": "Bernie Milton",
-   "day": "Friday",
-   "time": "12:20 PM - 01:10 PM"
+   "stage_id": 1,
+   "day_id": 2,
+   "start_time": "05:20 PM",
+   "end_time": "06:10 PM",
+   "photo": "/images/photos/1.jpg"
   },
   {
-   "title": "Road Man",
-   "description": "<p>Reggae, Funk, Blues, Singer Songwriter</p>",
-   "long_description": "<p>Jon Petronzio displays a deep understanding of the soul of music. With hooks that get stuck in your head and bounce around for days, to lyrics that make you think or make you smile, \"Light At the Speed of Life\" is one of those collections that prove the album format is not only not dead, but has as much meaning today as it ever did. From the upbeat, roots-style \"Who Do You Love\" to the darker message of \"Mankind Suicide\" to the love-lost lament of \"Crying For So Long\", these songs run the gammut of human experience, and put Road Man squarely on the map of relevant, meaningful and downright good-to-listen-to music.</p>",
-   "url": "http://www.roadman.us/",
-   "stage": "Bernie Milton",
-   "day": "Friday",
-   "time": "01:30 PM - 02:40 PM"
-  },
-  {
-   "title": "Gunpoets",
-   "description": "<p>Voice as a weapon, words as bullets, spreading the universal message of peace, love, and justice through music.</p>",
-   "url": "https://www.gunpoets.com",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "03:00 PM - 05:00 PM"
-  },
-  {
-   "title": "Arthur B and the Planetary Mix",
-   "description": "<p>elestial grooves for the celebration of life!</p>",
-   "long_description": "<p>Arthur B and The Planetary Mix is a modern R n B influenced group, bringing on stellar sounds framed in an old school style. With original songs that are at once fresh and new, but also timeless and classic, this is music to dance to, sing with, and celebrate life. The band's live performances have been described as \"A rare treat\" and \"Pure soul healing\". Their much anticipated debut CD will be released in early 2019.</p>",
-   "url": "https://www.arthurbandtheplanetarymix.com",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "06:00 AM - 06:45 AM"
-  },
-  {
-   "title": "Vitamin L",
-   "description": "<p>Charater Education through Music</p>",
-   "long_description": "<p>The purpose of the Vitamin L project is to spread love and goodwill through music... to uplift and inspire young people and encourage positive character development, through music. The objective is that the listeners will absorb the ideas we present and integrate them so that these ideas can help them make healthy choices and have healthy relationships with themselves and others. Our mission is to reach and positively influence as many children as possible.</p>",
-   "url": "https://vitaminl.org",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "07:00 AM - 07:50 AM"
-  },
-  {
-   "title": "Seishi Karate",
-   "description": "<p>Strong Heart, Strong Mind, Real Discipline...</p>",
-   "long_description": "<p>Seishi Juku training is safe, most effective and fun. This \"Legendary \" Martial Art Discipline is practiced seriously, recognized locally and worldwide. </p>",
-   "url": "http://seishikarate.vzwebsites.com",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "08:00 AM - 08:45 AM"
-  },
-  {
-   "title": "Palleon",
-   "description": "<p>groovy, hooky synthpop music.</p>",
-   "long_description": "<p>From Trumansburg, NY, the birthplace of Robert Moog's first modular synthesizer, comes Chris Ploss' \"Palleon\"</p>",
-   "url": "https://soundcloud.com/palleon",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "09:00 AM - 09:30 AM"
-  },
-  {
-   "title": "Vee Da Bee",
-   "description": "<p>melodic guitar work with eclectic percussive elements</p>",
-   "long_description": "<p>Vee Da Bee is a pseudonym for Victoria DeBerry, who moved up to Ithaca, NY from Houston, TX to pursue a degree in Communications. She got swept up in the beauty of the Finger Lakes and planted her roots. She started as a solo act in 2016, and eventually met Paul (bass) and Chris (drums/percussion) who make up the band.</p>",
-   "url": "http://veedabeemusic.com/",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "09:50 AM - 10:40 AM"
-  },
-  {
-   "title": "Wassa Pan Afrika Dance Ensemble",
-   "description": "<p>joy and passion are infectious</p>",
-   "long_description": "<p>Wassa Pan Afrika Dance Ensemble was founded by Nana Kwasi Anim, and is known as the most premiere traditional African Dance and Drum performance group throughout Ghana, West Africa.  Several members trained at the Pan Africa Orchestra, the Center for National Culture, Ghana Cultural Ballet, and the Dance Factory.  They are considered the most elite group of musicians and dancers, and students and audiences have traveled from all over the world to train with them.</p>",
-   "url": "https://www.nanawassaafricandance.com",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "11:00 AM - 12:00 PM"
-  },
-  {
-   "title": "Josh Oxford CD Release",
-   "description": "<p>synthesizer compositions</p>",
-   "long_description": "<p>Electronisist Josh Oxford, born in 1985, is a composer, arranger, and performer of myriad styles of music. Using his collection of vintage synthesizers, Josh is the leader of “The OXtet,” a jazz fusion ensemble for which Oxford composes all the music. He has performed throughout the country, especially in his native central New York, on piano, percussion, and Moog synthesizer.</p>",
-   "url": "https://www.joshoxford.com/music",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "12:15 PM - 01:10 PM"
-  },
-  {
-   "title": "Kurt Riley",
-   "description": "<p>21st century rock n roll</p>",
-   "long_description": "<p>Born an Army brat, Kurt Riley has been on the road all his life. Relocating from state to state often as a boy, he turned to art and fiction as solace from the loneliness that life granted. Stemming from a conservative upbringing, he sought an escape from that stifling mindset; the exodus was granted at fourteen years old, when he discovered The Rolling Stones. Further galvanized by Delta blues, Chess Records, and classic R&B, Riley taught himself how to sing and play both the guitar and harmonica a year later. Subsequently, enthralled by Fifties rock and roll and the brilliant groups of the British Invasion, he began composing original songs of his own in earnest. Along the way, he added piano, synthesizer, drums, maracas, castanets, tambourine, bass guitar and slide guitar to his palette, composing increasingly melodic, richly interwoven pop songs. Riley's influences grew to include glam rock, Moroccan ritual music, new wave, 1930s pop standards, and Eighties post-punk. All of these and more informed a rich, diverse style of songwriting, which combines disparate elements in new ways while preserving the rockabilly energy and Delta blues grit that first inspired him in the first place.</p>",
-   "url": "http://www.kurtriley.com/",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "01:30 PM - 02:30 PM"
-  },
-  {
-   "title": "The Blind Spots",
-   "description": "<p>ll original, female-fronted, five-piece moxy rock band</p>",
-   "long_description": "<p>The Blind Spots, a tenured, original, five-piece moxy rock band steered by magnetic songstress and force of nature Maddy Walsh (think Heart; think Janis; think Adele and Blondie and Joan Jett and Talking Heads all rolled into one), recently celebrated its ten-year \"bandiversary\" with a sold-out show at Ithaca, NY's Hangar Theatre. The event was paired with the release of the band's fourth studio album, Talk, which they have been actively touring the country in support of. The new album brings to the stage a wide range of emotions and a matured grasp of songwriting, paired, as always, with the band's signature high-energy performances and incessant penchant for FUN.</p>",
-   "url": "http://www.theblindspots.com",
-   "stage": "Bernie Milton",
-   "day": "Saturday",
-   "time": "03:00 PM - 05:00 PM"
-  },
-  {
+   "id": 2,
    "title": "Alan Rose and Restless Elements",
    "description": "<p>Songwriter over the twelve-string edge.</p>",
    "long_description": "<p>A quick list of influences combines names you’ll recognize like Springsteen, Costello, and Simon and Garfunkel with names you might not, like Crenshaw, Bragg, and Whiskeytown. Years of record collecting, including stints as a reviewer for Webster’s Weekly (one of the first web-only periodicals) and as a writer for 14850.com magazine, have given him a depth of musical knowledge and a taste for the obscure. All of this listening has helped Alan develop a talent for turning universal emotions into memorable lyrics. Combine that with an ear for marrying those lyrics to hook-filled memories and you have songs that engage listeners on multiple levels.</p>",
    "url": "http://www.alanrosemusic.com",
-   "stage": "Bernie Milton",
-   "day": "Sunday",
-   "time": "06:00 AM - 06:45 AM"
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "11:00 AM",
+   "end_time": "11:45 AM",
+   "photo": "/images/photos/2.jpg"
   },
   {
-   "title": "Answer the Muse",
-   "description": "<p>A multi-faceted soul affirming musical experience</p>",
-   "long_description": "<p>Answer the Muse is a group of dedicated professional musical artists with relatable, inclusive, universally themed mainly original material that dovetails beautifully with going right into Kundalini mantra Kriya/ chanting. They combine performance art. The most striking element is their authenticity. Really powerful stuff.</p>",
-   "url": "http://www.answerthemuse.com",
-   "stage": "Bernie Milton",
-   "day": "Sunday",
-   "time": "07:00 AM - 07:45 AM"
+   "id": 3,
+   "title": "Alexander Bradshaw Band",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Singer songwriter backed by local powerhouse players. Take a listen to the live demo linked above from the Ithaca is Music podcast series and enjoy!</p>",
+   "url": "https://ithacaismusic.bandcamp.com/album/episode-5-alexander-bradshaw",
+   "stage_id": 1,
+   "day_id": 2,
+   "start_time": "12:00 PM",
+   "end_time": "12:45 PM",
+   "photo": "/images/photos/3.jpg"
   },
   {
-   "title": "Bob Keefe and the Surf Renegades",
-   "description": "<p>he ONLY surf rock band in the Southern Tier </p>",
-   "long_description": "<p>Bob Keefe and the Surf Renegades is the ONLY surf rock band in the Southern Tier (NY). With the standard quartet lineup of lead and rhythm guitars, bass guitar, and drums, their music is true to the Southern California surf scene of the 1960's.</p>",
-   "url": "http://surf-renegades.com/",
-   "stage": "Bernie Milton",
-   "day": "Sunday",
-   "time": "08:00 AM - 07:00 AM"
-  },
-  {
-   "title": "Pete Panek & The Blue Cats",
-   "description": "<p>such blues</p>",
-   "long_description": "<p>think: Muddy Waters, Bo Diddley, Hank Williams, Led Zeppelin, Guitar Shorty, Coco Montoya, Son Seals, Koko Taylor, Buddy Guy, Gary Moore, Blind Ebbets Field</p>",
-   "url": "https://www.facebook.com/PetePanekandTheBlueCats/",
-   "stage": "Bernie Milton",
-   "day": "Sunday",
-   "time": "09:00 AM - 09:40 AM"
-  },
-  {
-   "title": "Mary Lorson",
-   "description": "<p>songwriter and composer</p>",
-   "long_description": "<p>Lorson’s words sketch characters and situations in enigmatic glances and flashes of candor, while her graceful melodies promise more consolation than the words they carry.”</p>",
-   "url": "http://www.marylorson.com",
-   "stage": "Bernie Milton",
-   "day": "Sunday",
-   "time": "09:55 AM - 10:45 AM"
-  },
-  {
-   "title": "Thru Spectrums",
-   "description": "<p>ALL-ORIGINAL FUNK ROCK</p>",
-   "long_description": "<p>A fixture in the Ithaca, NY, community for years, Thru Spectrums currently plays shows all around New York and the surrounding area. After just releasing their new record, \"Process\", they have been busy building a steady, loyal fanbase. Catch them live and get down with Ithaca's funkiest crew!</p>",
-   "url": "https://www.thruspectrums.com/",
-   "stage": "Bernie Milton",
-   "day": "Sunday",
-   "time": "11:05 AM - 11:50 AM"
-  },
-  {
-   "title": "Mutron Warriors",
-   "description": "<p>afro-funk</p>",
-   "long_description": "<p>Today the band boasts nine full-time members and has tirelessly crafted its sound to be the live juggernaut that can do it all! The Mutron Warriors continuously leaves audiences wanting more, and keeps them coming back time and time again to share in the experience of a truly energizing show.</p>",
-   "url": "https://www.facebook.com/mutronwarriors/",
-   "stage": "Bernie Milton",
-   "day": "Sunday",
-   "time": "12:15 PM - 01:05 PM"
-  },
-  {
-   "title": "The Crucials",
-   "description": "<p>roots//reggae</p>",
-   "long_description": "<p>Members seen with John Brown's Body, Dispatch, Giant Panda Guerilla Dub Squad, Big Mean Sound Machine, Nahko and Medicine for the People, Thunder Body, Donna the Buffalo, The Comb Down, Galactic Escort Service, Sophistafunk, Road Man, Mosaic Foundation, Jimkata, Xamalian, Sim Redmond Band and more.</p>",
-   "url": "https://www.facebook.com/crucialsreggae/",
-   "stage": "Bernie Milton",
-   "day": "Sunday",
-   "time": "01:30 PM - 02:20 PM"
-  },
-  {
-   "title": "Rosie and the Bros",
-   "description": "<p>zydeco and cajun dance</p>",
-   "long_description": "<p>Rose & The Bros are a powerhouse ensemble specializing in irresistible Zydeco and Cajun dance grooves resonating with sweet vocal harmonies and crooning country roots. With a shared dream to simply have a blast while making people dance without stopping, Rosie Newton, Paul Martin, and Steve Selin set out to collect tunes and the rare ingredients of a no holds barred Zydeco and Cajun dance party. Once the trio had found their undeniable rhythm section in drummer Greg Evans, bassist Angelo Peters, and rub board/triangle player Sally Freund, Rose & The Bros became a six piece instant party and the band was complete. Now, Rose & The Bros continue forward, gathering strength and a warm following with infectious joy, a love for community, and a rollicking good time.</p>",
-   "url": "https://www.roseandthebros.com/photos",
-   "stage": "Bernie Milton",
-   "day": "Sunday",
-   "time": "02:45 PM - 04:00 PM"
-  },
-  {
-   "title": "June with Chandani Belly Dance Troupe Cayuga",
-   "description": "<p>belly dance</p>",
-   "long_description": "<p>Chandani Belly Dance Troupe performs under the direction of June Seaney, Professional Oriental Dancer. It is made up of women of various ages and backgrounds who come together to share their love and respect of the music and culture of the Middle East and North Africa through Oriental dance, and to share this dance with everyone through performance.</p>",
-   "url": "https://moonlightdancer.com/chandani/",
-   "stage": "Cayuga circle",
-   "day": "Friday",
-   "time": "11:20 AM - 12:00 PM"
-  },
-  {
-   "title": "Fall Creek Brass Band",
-   "description": "<p>brass band</p>",
-   "long_description": "<p>FCBB is exciting, youthful, celebratory, and highly danceable funk, rock, pop, brass, and hip-hop on horns and drums.</p>",
-   "url": "http://fallcreekbrassband.com",
-   "stage": "Cayuga circle",
-   "day": "Friday",
-   "time": "12:20 PM - 01:10 PM"
-  },
-  {
-   "title": "Mirage Belly Dancers of Ithaca",
-   "description": "<p>belly dance</p>",
-   "long_description": "<p>We are a multi-generational belly dance troupe originating out of Ithaca's Community School of Music and Arts. The troupe has been in existence for more than 30 years and we're still going strong. Invite us to join your next celebration!</p>",
-   "url": "https://www.facebook.com/Miragebellydancetroupe/",
-   "stage": "Cayuga circle",
-   "day": "Friday",
-   "time": "01:30 PM - 02:40 PM"
-  },
-  {
-   "title": "Kurt Lichtmann",
-   "description": "<p>swing dance</p>",
-   "long_description": "<p>[object Object]</p>",
-   "url": "http://s583970036.onlinehome.us/ithacaswingdance/f_Link20_bio.html",
-   "stage": "commons",
-   "day": "Saturday",
-   "time": "06:00 AM - 06:45 AM"
-  },
-  {
-   "title": "GIAC Jumpers",
-   "url": "https://www.cityofithaca.org/327/Greater-Ithaca-Activities-Center",
-   "stage": "Cayuga circle",
-   "day": "Saturday",
-   "time": "07:00 AM - 07:50 AM"
-  },
-  {
-   "title": "Hilby the German Juggling Boy",
-   "description": "<p>juggling comedy</p>",
-   "long_description": "<p>As a boy growing up in Berlin, young Hilby boasted no traumatic childhood experiences and exhibited no particular talents other than making funny faces at strangers and, as Hilby himself describes it, \"breezing rhyzmically.\" Hilby grew up doing all the fun things that people do when they're not in school until they began to call him a grown-up. That's when he packed up his old kit bag, gave his mom a big kiss on the cheek, and set out on a journey that was to lead him all over the world.</p>",
-   "url": "https://www.hilby.net",
-   "stage": "Cayuga circle",
-   "day": "Saturday",
-   "time": "08:00 AM - 08:45 AM"
-  },
-  {
-   "title": "Fiddlin' Future",
-   "description": "<p>young fiddlers</p>",
-   "long_description": "<p>All of the musicians in the Fiddlin' Future chapter of the NYSOTFA are kids. WIth adult oversight, the staff of this chapter are all kids too. Many of these talented young musicians were inspired to learn to fiddle through attending the annual NYSOTFA sponsored Kids' Kamp held at the North American Fiddlers' Hall of Fame and Museum in Osceola, NY. They have performed at shopping malls, for dances, concerts and at various other fiddling events in New York State. In addition to supporting each other, the kids in this chapter inspire other kids to consider learning to play the fiddle. As the name implies, this chapter truely is the \"Fiddlin' Future\".</p>",
-   "url": "https://www.nysotfa.com/fiddlinfuture",
-   "stage": "Trolly Circle",
-   "day": "Saturday",
-   "time": "09:30 AM - 09:45 AM"
-  },
-  {
+   "id": 4,
    "title": "Alicia Freedman",
    "description": "<p>belly dance</p>",
    "long_description": "<p>created A Little Lighter and Belly Dance Body & Soul as a way to fuse art and food. A way to make it fun and sensual to take care of ourselves. My dream is that this project touches your life and leaves you feeling lighter, graceful and grateful with every bite and every step.</p>",
    "url": "https://bellydancebodyandsoul.com",
-   "stage": "Cayuga circle",
-   "day": "Saturday",
-   "time": "09:50 AM - 10:25 AM"
+   "stage_id": 5,
+   "day_id": 3,
+   "start_time": "02:50 PM",
+   "end_time": "03:25 PM",
+   "photo": "/images/photos/4.jpg"
   },
   {
-   "title": "ITHACA Ballet",
-   "description": "<p>ballet</p>",
-   "long_description": "<p>The Ithaca Ballet, under the direction of Cindy Reid, is Upstate New York’s only repertory company and is the resident ballet company at the beautiful State Theatre in downtown Ithaca. Founded in 1961, it is also the oldest continuously performing arts group in Tompkins County. The Ithaca Ballet’s mission is sharing the art of classical dance with the widest audience possible in upstate New York.</p>",
-   "url": "http://www.ithacaballet.org",
-   "stage": "Cayuga circle",
-   "day": "Saturday",
-   "time": "10:30 AM - 11:15 AM"
+   "id": 5,
+   "title": "Andrew Alling",
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>One man original indy folk rock jam band</p>",
+   "url": "https://www.andrewalling.com",
+   "stage_id": 3,
+   "day_id": 4,
+   "start_time": "04:05 PM",
+   "end_time": "04:50 PM",
+   "photo": "/images/photos/5.jpg"
   },
   {
-   "title": "Fingerlakes Magic Club/ International Brotherhood of Magicians",
-   "description": "<p>magic</p>",
-   "long_description": "<p>The International Brotherhood of Magicians is the world’s largest organization of magicians, with members in 88 countries. Founded in 1922 by Len Vintus and Gene Gordon, the I.B.M.’s membership today includes the top professional magicians and thousands of enthusiastic hobbyists from all walks of life.</p>",
-   "url": "https://www.magician.org/about/local-ibm-rings?state=New%20York",
-   "stage": "Trolly Circle",
-   "day": "Saturday",
-   "time": "12:15 PM - 01:10 PM"
+   "id": 6,
+   "title": "Angie Beeler",
+   "description": "<p>vocal jazz</p>",
+   "long_description": "<p>Miss Angie Beeler has music in her bones and has not gone a day in her life without a song.</p>",
+   "url": "https://www.missangiesmusic.com",
+   "stage_id": 3,
+   "day_id": 2,
+   "start_time": "05:20 PM",
+   "end_time": "06:10 PM",
+   "photo": "/images/photos/6.jpg"
   },
   {
-   "title": "One Heart Community drumming",
-   "description": "<p>The drum circle is open to everyone</p>",
-   "long_description": "<p>One Heart Community Drumming is an open drum circle based in Ithaca, NY, welcoming all ages, levels of interest, and abilities. There is no specific \"leader\", rather we take turns facilitating the jam. It is helpful to bring your own drum but we usually have extras to share as well as shakers, bells etc.</p>",
-   "url": "http://www.oneheartcommunitydrumming.org",
-   "stage": "Trolly Circle",
-   "day": "Saturday",
-   "time": "01:15 PM - 01:30 PM"
+   "id": 7,
+   "title": "Answer the Muse",
+   "description": "<p>A multi-faceted soul affirming musical experience</p>",
+   "long_description": "<p>Answer the Muse is a highly infectious, positive musical journey that weaves together relevant original rock/pop music, theatrical moments and audience participation in every show. Our signature sound includes tight vocal harmonies, exotic instrumentation and expansive arrangements. Audiences feel moved, inspired and \"crazy happy\".</p>",
+   "url": "http://www.answerthemuse.com",
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "12:00 PM",
+   "end_time": "12:45 PM",
+   "photo": "/images/photos/7.jpg"
   },
   {
-   "title": "Ithaca Capoeira Center: Angola Quintal",
-   "description": "<p>martial arts</p>",
-   "long_description": "<p>Capoeira is an Afro-Brazilian martial art, created by slaves and hidden through dance and music. Capoeira is played as a game between two practitioners inside of a circle of spectators, other capoeira players, and a band of musicians.</p>",
-   "url": "https://www.ithacacapoeira.com",
-   "stage": "Trolly Circle",
-   "day": "Saturday",
-   "time": "02:30 PM - 03:00 PM"
-  },
-  {
-   "title": "The Cayuga Wizards",
-   "stage": "Trolly Circle",
-   "day": "Friday",
-   "time": "07:00 AM - 07:45 AM"
-  },
-  {
-   "title": "June with Chandani Belly Dance Troupe",
-   "description": "<p>belly dance</p>",
-   "long_description": "<p>Chandani Belly Dance Troupe performs under the direction of June Seaney, Professional Oriental Dancer. It is made up of women of various ages and backgrounds who come together to share their love and respect of the music and culture of the Middle East and North Africa through Oriental dance, and to share this dance with everyone through performance.</p>",
-   "url": "https://moonlightdancer.com/chandani/",
-   "stage": "Cayuga circle",
-   "day": "Friday",
-   "time": "07:00 AM - 07:45 AM"
-  },
-  {
-   "title": "Ithaca Karate Harmony with Nature School",
-   "description": "<p>martial arts</p>",
-   "long_description": "<p>TEACHER DIRECTOR KATHLEEN GARRITY has been teaching karate and self-defense in Ithaca for forty-two years. Garrity studied Washin-ryu karate-do with Master Hidy Ochiai for eighteen years and ran a branch school for Master Ochiai for 15 years. Her dojo, Ithaca Karate Harmony with Nature School, celebrated its 27th anniversary this spring.</p>",
-   "url": "https://www.ithacakarate.com",
-   "stage": "Cayuga circle",
-   "day": "Friday",
-   "time": "08:00 AM - 07:00 AM"
-  },
-  {
-   "title": "Hula Hut Polynesian Dance",
-   "description": "<p>hula dance</p>",
-   "long_description": "<p>Since 2005, our hula group has enjoyed dancing at a variety of private and community events. We look forward to continuing to connect with others in the community as well as teachers/kumu, dancers and halaus/schools from all over the world.</p>",
-   "url": "http://www.hulahut.org",
-   "stage": "Cayuga circle",
-   "day": "Friday",
-   "time": "09:00 AM - 09:40 AM"
-  },
-  {
-   "title": "Hilby the German Juggling Boy",
-   "description": "<p>juggling comedy</p>",
-   "long_description": "<p>As a boy growing up in Berlin, young Hilby boasted no traumatic childhood experiences and exhibited no particular talents other than making funny faces at strangers and, as Hilby himself describes it, \"breezing rhyzmically.\" Hilby grew up doing all the fun things that people do when they're not in school until they began to call him a grown-up. That's when he packed up his old kit bag, gave his mom a big kiss on the cheek, and set out on a journey that was to lead him all over the world.</p>",
-   "url": "https://www.hilby.net",
-   "stage": "Trolly Circle",
-   "day": "Friday",
-   "time": "12:15 PM - 01:05 PM"
-  },
-  {
-   "title": "Fall Creek Brass Band",
-   "description": "<p>brass band</p>",
-   "long_description": "<p>FCBB is exciting, youthful, celebratory, and highly danceable funk, rock, pop, brass, and hip-hop on horns and drums.</p>",
-   "url": "http://fallcreekbrassband.com",
-   "stage": "Start at Trolley adn march to Cayuga",
-   "day": "Friday",
-   "time": "01:10 PM - 01:30 PM"
-  },
-  {
-   "title": "Danza Romani (Gypsy Dance)",
-   "description": "<p>gypsy dance</p>",
-   "long_description": "<p>Danza Romani, directed by June Seaney, performing improvisational Romani (Gypsy) dance from Spain, Turkey and the Balkans. Danza Romani, with traditional costuming, music and dance styling, perform with honor and respect to the Romani people.</p>",
-   "url": "https://moonlightdancer.com/danza-romani/",
-   "stage": "Trolly Circle",
-   "day": "Friday",
-   "time": "01:30 PM - 02:20 PM"
-  },
-  {
-   "title": "Paul Aaron Jackson",
-   "url": null,
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "06:20 PM - 06:40 PM"
-  },
-  {
-   "title": "United Dance Troupe",
-   "url": null,
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "06:40 PM - 06:55 PM"
-  },
-  {
-   "title": "East Meets West",
-   "description": "<p>Tabla and guitar</p>",
-   "long_description": "<p>Manmohan Mohapatra is a professional tabla player from Bangalore, India and is staying in Ithaca for a limited time.  </p><p>This rare type of performance will feature guitarist Dennis Winge (Damodar Das) and Manmohan interacting on a variety of pieces from Western-style jazz, funk and rock to world grooves, odd time signatures and Raga-influenced harmony.</p>",
-   "url": null,
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "07:00 AM - 07:30 AM"
-  },
-  {
-   "title": "GIAC Jumpers",
-   "url": null,
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "07:45 AM - 08:00 AM"
-  },
-  {
-   "title": "Matthew Cornwell",
-   "url": null,
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "08:00 AM - 08:30 AM"
-  },
-  {
-   "title": "Neo Project",
-   "description": "<p>Funked Up Jazzy Soul, Neo Soul, R&B, Funk, Jazz, Rock, Afro-Caribbean, World Grooves.</p><p></p>",
-   "long_description": "<p>NEO Project is a professional seven piece, high energy dance band rooted in funky R&B grooves, Afro Cuban/Caribbean rhythms & jazzy, bluesy soul music. Its members are music professors, a former Motown sideman and soul practitioners with years of hard earned experience. Their repertoire will get you up and dancing with new arrangements of established hits and irresistible original party grooves. NEO Project is guaranteed to make your event the talk of the town.</p>",
-   "url": "https://www.facebook.com/NeoProjectBand",
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "08:45 AM - 09:45 AM"
-  },
-  {
-   "title": "Sheneque Rowe",
-   "url": null,
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "10:00 AM - 10:30 AM"
-  },
-  {
-   "title": "Greatest Common Factor (GCF Dance)",
-   "url": null,
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "10:30 AM - 10:45 AM"
-  },
-  {
-   "title": "Mstr McBean",
-   "description": "<p>ithaca based rapper</p>",
-   "long_description": "<p>Mr. McBean is an Ithaca-based rapper, producer and co-founder of our local label, Smacked Records. He’s most well known in Ithaca as an influential figure in the music and youth scene, having worked alongside community organizations for many years.</p>",
-   "url": "https://www.facebook.com/pg/Mr.McBean.SR/",
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "11:00 AM - 11:30 AM"
-  },
-  {
+   "id": 8,
    "title": "Anthony Kannon",
    "description": "<p>Music across all platforms</p>",
    "long_description": "<p>Artist from Upstate NY. Smacked Records 🤙🏼</p>",
    "url": "https://twitter.com/anthony14rapper?lang=en",
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "11:45 AM - 12:15 PM"
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "03:00 PM",
+   "end_time": "03:30 PM",
+   "photo": "/images/photos/8.jpg"
   },
   {
+   "id": 9,
+   "title": "Arthur B and the Planetary Mix",
+   "description": "<p>elestial grooves for the celebration of life!</p>",
+   "long_description": "<p>Arthur B and The Planetary Mix is a modern R n B influenced group, bringing on stellar sounds framed in an old school style. With original songs that are at once fresh and new, but also timeless and classic, this is music to dance to, sing with, and celebrate life. The band's live performances have been described as \"A rare treat\" and \"Pure soul healing\". Their much anticipated debut CD will be released in early 2019.</p>",
+   "url": "https://www.arthurbandtheplanetarymix.com",
+   "stage_id": 1,
+   "day_id": 3,
+   "start_time": "11:00 AM",
+   "end_time": "11:45 AM",
+   "photo": "/images/photos/9.jpg"
+  },
+  {
+   "id": 10,
+   "title": "Auntie Emo's Ukulele Showcase or Workshop",
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>Ukulele music, either in a workshop, or by various local ukulele performers. Generally happy, but sometimes blue(sy)</p>",
+   "url": "http://ithacaukes.weebly.com",
+   "stage_id": 2,
+   "day_id": 4,
+   "start_time": "02:55 PM",
+   "end_time": "03:45 PM",
+   "photo": "/images/photos/10.jpg"
+  },
+  {
+   "id": 11,
    "title": "Ave Mack",
    "description": "<p>hip-hop</p>",
    "long_description": "<p>Ave Mack was born Rahmel Mack on January 27, in Brooklyn, NY. Ave's childhood in Brooklyn left him wanting more out of his life than what he saw around him. Always interested in music and rhymes, Ave began writing while still young, but thought that a life and career in music was an impossible dream. It wasn't until recent years that he began to realize what he really wanted out of life for himself and for those around him,and began focusing seriously on his music. His lyrical style and content is heavily influenced by his experiences growing up in the Red Hook projects, as well as by the people and friends that he has worked with musically; Trey Skoolz, Dj Dream, TerrorDome, Rising Sun & The GunPoets, Silvaa, Dj Sma,Ra Dollas, Krayze & Hot, Youngin,Willie\" Champ\" Monroe, Jae Prodigy, Caleo Latin bay, Lil Jay,D-Rock, Eazy Thai Boy, Money Mars,Korey Bolden, Dj Davito, Yung Eddie. Like many of us, Ave Mack is inspired by the career and musical accomplishments of Shawn Carter (Jay-Z), also a Brooklyn native, who struggled with poverty and crime and rejection in the music game before becoming one of the most influential figures in hip hop today. Ave's alias is a reference to both the ave where he grew up in Red Hook, paired with his families government name; representing where he came from by making it a part of who he hopes to become. Ave has performed primarily in upstate NY; his music has been featured on the Tim Westwood Show in the UK and select songs can also be found on mixtapes in New York and Georgia</p>",
    "url": "https://www.facebook.com/Ave-Mack-302095320930/",
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "12:30 PM - 01:00 PM"
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "05:30 PM",
+   "end_time": "06:00 PM",
+   "photo": "/images/photos/11.jpg"
   },
   {
-   "title": "SingTrece",
-   "description": "<p>SINGER, SONG WRITER, ACTOR</p>",
-   "long_description": "<p>Elbonee ”Trece” Stevenson has been preparing for stardom since the age of six. Placing her faith in God at an early age, Trece started developing her booming attention grabbing style of vocalizing through constant practice in her church choir. Being chosen one out of five in her school to participate in the School of Performing Arts, she learned a variety of techniques needed to fully exploit her voice. Trece has been trained in Opera, Jazz, Blues, and R&B Music.</p>",
-   "url": "https://www.singtrece.com/",
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "01:15 PM - 02:00 PM"
+   "id": 12,
+   "title": "Blue Cayuga Jazz",
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>Jazz.  Piano, banjo, bass.  Original music + selected modern jazz pieces.</p>",
+   "url": "https://bluecayugajazz.bandcamp.com",
+   "stage_id": 2,
+   "day_id": 3,
+   "start_time": "12:00 PM",
+   "end_time": "12:50 PM",
+   "photo": "/images/photos/12.jpg"
   },
   {
-   "title": "Mbusi",
-   "description": "<p>R&B</p>",
-   "long_description": "<p>Born in south Africa, raised in ny. Mbusi is the truth. Pouring out his life experiences on every track singing with his talented voice. Touching the hearts and minds of every person he comes across. His music can be describe as mesmerizing. And as of late has been described as the r&b king. Take a minute and check out some of our videos..Join the movement of this talented new r&b musician</p>",
-   "url": "https://www.reverbnation.com/mbusirbking",
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "02:15 PM - 02:45 PM"
+   "id": 13,
+   "title": "Bob Keefe and the Surf Renegades",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Bob Keefe and the Surf Renegades is the ONLY surf rock band in the Southern Tier (NY). With the standard quartet lineup of lead and rhythm guitars, bass guitar, and drums, their music is true to the Southern California surf scene of the 1960's.</p>",
+   "url": "http://surf-renegades.com/",
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "01:00 PM",
+   "end_time": "01:45 PM",
+   "photo": "/images/photos/13.jpg"
   },
   {
-   "title": "Jamelody",
-   "description": "<p>Reggae</p>",
-   "long_description": "<p>Michael \"Jamelody\" Williams was born in Carenage Trinidad in 1980. The baby of six children, it was not long before his parents and older siblings realized that he was a very gifted vocalist and musician. As a member of this very spiritual family it was almost destined that young Michael would be part of the church choir. There, he expanded his vocal ability while embracing his religion. As a teenager he started to apply his vocal skills to making reggae compositions with sweet melodies and hooks in a style very characteristic of the R&B he had been singing earlier in his life but with rich cultural and spiritual content. This is why he took the name \"Jamelody\" (Jah Melody) It was at a captivating performance as an opening act for a reggae show in Port of Spain which brought him to the attention of his current manager who immediately took him to Jamaica to begin recording. On a second trip to Jamaica he was introduced to Bobby \"Digital\" Dixon, ace producer and owner of the well known record label Digital B. The sweet sound of Jamelody -- as heard on the single \"Pressure\", taken from his forthcoming VP album,to be released in September 2007 -- is a result of their amazing collaborative effort and musical chemistry.</p>",
-   "url": "https://www.facebook.com/pg/Jamelody/",
-   "stage": "Press Bay",
-   "day": "Saturday",
-   "time": "02:45 PM - 04:00 PM"
+   "id": 14,
+   "title": "Boynton Middle School Chamber Orchestra",
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>The Boynton Chamber Orchestra is 26-member string orchestra consisting of Boynton Middle School's most dedicated young musicians. The talented students of the BCO will perform an exciting and varied program consisting of baroque, classical, popular and contemporary music. </p>",
+   "url": "https://www.ithacacityschools.org/districtpage.cfm?pageid=245",
+   "stage_id": 2,
+   "day_id": 4,
+   "start_time": "05:15 PM",
+   "end_time": "06:05 PM",
+   "photo": "/images/photos/14.jpg"
   },
   {
+   "id": 15,
+   "title": "Bronwen Exter",
+   "description": "<p>Delightfully dark lounge sweetness.</p>",
+   "long_description": "<p>Original indie rock</p>",
+   "url": "http://www.bronwenexter.com",
+   "stage_id": 1,
+   "day_id": 2,
+   "start_time": "03:10 PM",
+   "end_time": "04:00 PM",
+   "photo": "/images/photos/15.jpg"
+  },
+  {
+   "id": 16,
+   "title": "Colleen Kattau & Dos XX",
+   "description": "<p>acoustic, but w/ electric bass and lead guitar</p>",
+   "long_description": "<p>Progressive folk colored w/ south of the border beats and socio-enviro-fem conscious compositions with bass (Mike Brandt), sax and flutes (Jamie Yaman), drums (Dave Pandori), soaring and earthy vocals and guitar (Colleen).</p>",
+   "url": "http://www.colleenkattau.com",
+   "stage_id": 4,
+   "day_id": 4,
+   "start_time": "02:50 PM",
+   "end_time": "03:40 PM",
+   "photo": "/images/photos/16.jpg"
+  },
+  {
+   "id": 17,
+   "title": "Corey Loveless",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Im a local hip hop artist speaking on topics ranging from fun party tracks to songs on mental health and addiction, myself and my producer and engineer would perform together him as the dj and myself as the emcee </p>",
+   "url": "https://www.facebook.com/thatlovelesskid/",
+   "stage_id": 2,
+   "day_id": 2,
+   "start_time": "01:00 PM",
+   "end_time": "01:45 PM",
+   "photo": "/images/photos/17.jpg"
+  },
+  {
+   "id": 18,
+   "title": "Cozmic Theo",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Original Live-Looped Hip Hop Boogie Rock</p>",
+   "url": "https://www.cozmictheo.com",
+   "stage_id": 2,
+   "day_id": 3,
+   "start_time": "06:30 PM",
+   "end_time": "07:30 PM",
+   "photo": "/images/photos/18.jpg"
+  },
+  {
+   "id": 19,
+   "title": "Damodar Das Kirtan",
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>omni-faith sacred chanting</p>",
+   "url": "http://www.damodardas.com",
+   "stage_id": 2,
+   "day_id": 2,
+   "start_time": "12:00 PM",
+   "end_time": "12:45 PM",
+   "photo": "/images/photos/19.jpg"
+  },
+  {
+   "id": 20,
+   "title": "Danielle Ponder and the Tomorrow People",
+   "long_description": "<p>When Danielle Ponder and the Tomorrow People hit the stage things get torqued up quickly like a tent revival during tornado season. Named Top Ten Bands to watch by CityPaper, and winner of the 2015 and 2016 Roc Awards, \"Best Band\", Danielle Ponder and the Tomorrow People transcend musical genres with a blast of deep, powerful groove and soul. The band is the groove while Ponder’s pipes keep it rooted in soul. And according to Ponder, soul is more than a sound.</p><p>\n“Soul music is something you feel,” she says. “It gives you goose bumps.”\n\nThis Rochester, NY Native has spent the past years rendering goose bumps by perfecting her style and charismatic performance. She sings, you listen, you melt. The result of her focus and dedication is a tone that is both enchanting and seductive along with a riveting, honest stage presence. It is this voice that has helped her secure gigs opening up for powerhouses such as George Clinton, Ledisi and The Roots.  The band has also completed two successful European tours. Boyd Kletter of Bourbon Street Blues Club in Amsterdam said \"Danielle shines bright both on and off the stage. She's truly is a star!\"\n\nIn 2016 the singer released her debut EP Blow Out The Sun. Soultracks.com said  “Ponder’s vocals combine the spirit of the church with the speak-truth- to-power assertiveness of a movement leader. “  Jeff Spevak of the Democrat & Chronicle wrote \"Ponder’s tough-sounding vocals on “Three Word Revolution (I Love Myself)” is a defiant call to self worth. That title track feels custom built as a room-shaking anthem for women in the audience.” In 2016 the band would also enter the AfroPunk Battle of the Bands contest, where they surpassed hundreds of bands and made it to the final four.\n\nBeyond Danielle's musical talent, she is a passionate defense attorney, speaker and activist. Danielle has dedicated the past 15 years to organizing and speaking up for marginalized communities. She has worked on issues such as education funding, women's rights, and has spent the past 8 years working for criminal justice reform. Danielle was recently highlighted by the American Bar Association. In 2017 she created the Multi-Media show \"For the Love of Justice\", where she shines light on our criminal justice system through powerful lyrics and thought provoking visuals. \n\nDr. Karen Stote of WIlfred Laurier University called \" For the Love of Justice\" an \"impactful and uplifting performance\"\n\nThis sensational singer lists powerful influences that lit her fuse like Nina Simone, Big Mama Thornton, Shirley Chilsolm, Cornel West and Lauryn Hill. Ponder opens her mouth to sing or speak and it’s readily apparent; there’s another name that belongs in that pantheon as well. Danielle Ponder, and her time is now.</p>",
+   "url": "https://daniellepondermusic.com/",
+   "stage_id": 1,
+   "day_id": 1,
+   "start_time": "08:00 PM",
+   "end_time": "09:00 PM",
+   "photo": null
+  },
+  {
+   "id": 21,
+   "title": "Danza Romani (Gypsy Dance)",
+   "description": "<p>Dance</p>",
+   "long_description": "<p>Danza Romani (Gypsy Dance) - Brings the excitement of Romani (Gypsy) dances from Russia, Spain, Turkey and the Balkans through the variety of music, dance and costumes of these countries. A showcase of the diverse and beautiful dances of the Romani people.</p>",
+   "url": "https://moonlightdancer.com",
+   "stage_id": 6,
+   "day_id": 2,
+   "start_time": "06:30 PM",
+   "end_time": "07:20 PM",
+   "photo": "/images/photos/21.jpg"
+  },
+  {
+   "id": 22,
+   "title": "Delta Blues by Gerard Burke",
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>acoustic Delta blues w/ vocal</p>",
+   "stage_id": 3,
+   "day_id": 2,
+   "start_time": "03:10 PM",
+   "end_time": "04:00 PM",
+   "photo": "/images/photos/22.jpg"
+  },
+  {
+   "id": 23,
    "title": "Drew Kiddoo and the Blackouts",
    "description": "<p>country & western</p>",
    "long_description": "<p>Drew Kiddoo and the Blackouts is one of those \"good ole\" country/western bands. Hints of Hank, Merle, and George give every song it's prominent roots influence but the songs remain obviously personal and honest.  Drew, from California, moved here in 2017 and began writing original songs about travelin, boozin, and breakin hearts....mostly his own. Backed by local music scene heros: Joe Hayward on banjo/pedal steel (Ithaca Bottom Boys), Seth Gregory on stand-up bass (Mill Bastards/Pine Box), and Sid Burke on fiddle (Mill Bastards/Pine Box), the sound is authentic and timeless.  From busking for dollars, to becoming a headlining act, Drew Kiddoo and the Blackouts has recently evolved adding Tristen Ross on mandolin (Ithaca Bottom Boys), Jason Shegogue on electric guitar (Lady D and the Shadow Spirits), Sam Schmidt on second fiddle (Alexander Bradshaw Band), and Kieran Riley on drums (Revel Makes).  The band is currently recording its first full length album which will be released in May 2019.</p>",
    "url": "https://www.drewkiddooandtheblackouts.com",
-   "stage": "Press Bay",
-   "day": "Sunday",
-   "time": "06:15 AM - 07:05 AM"
+   "stage_id": 4,
+   "day_id": 4,
+   "start_time": "11:15 AM",
+   "end_time": "12:05 PM",
+   "photo": "/images/photos/23.jpg"
   },
   {
+   "id": 24,
+   "title": "East Meets West",
+   "description": "<p>Violin, Cello, Guitar (small amp), hand drums .. with belly dancers</p>",
+   "long_description": "<p>Original World Music music accompanied by belly dancers.  https://www.facebook.com/Hejira-a-World-Music-Experience-205072802397/app/2405167945/</p>",
+   "url": "https://www.facebook.com/Hejira-a-World-Music-Experience-205072802397/?eid=ARCcnHfBl9toBTgAzi_Ro7Rh5cyeojtuSjzZ15NomIwDo2V5LQjDPodSfu86nfcwtlXG4EZt_nk9wrek",
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "02:15 PM",
+   "end_time": "03:00 PM",
+   "photo": "/images/photos/24.jpg"
+  },
+  {
+   "id": 25,
+   "title": "EvoEvolution",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>A tastful blend of original songs and popular remixes performed with energy that keeps the whole crowd moving. Power pop, R&B, </p>",
+   "url": "http://artistecard.com/evoevolution",
+   "stage_id": 3,
+   "day_id": 2,
+   "start_time": "06:30 PM",
+   "end_time": "07:40 PM",
+   "photo": "/images/photos/25.jpg"
+  },
+  {
+   "id": 26,
+   "title": "Fall Creek Brass Band",
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>Ithaca's friendly neighborhood brass band! Fall Creek Brass Band brings exciting, vivacious, and highly danceable brass-funk, rock, pop, and hip-hop on brass and drums. </p>",
+   "url": "http://fallcreekbrassband.com",
+   "stage_id": 5,
+   "day_id": 2,
+   "start_time": "05:20 PM",
+   "end_time": "06:10 PM",
+   "photo": "/images/photos/26.jpg"
+  },
+  {
+   "id": 27,
+   "title": "Fall Creek Brass Band",
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>Ithaca's friendly neighborhood brass band! Fall Creek Brass Band brings exciting, vivacious, and highly danceable brass-funk, rock, pop, and hip-hop on brass and drums. </p>",
+   "url": "http://fallcreekbrassband.com",
+   "stage_id": 6,
+   "day_id": 2,
+   "start_time": "06:10 PM",
+   "end_time": "06:30 PM",
+   "photo": "/images/photos/27.jpg"
+  },
+  {
+   "id": 28,
+   "title": "Fiddlin' Future",
+   "description": "<p>Youth chapter of NY State Old Time Fiddling Association; traditional fiddling and \"old time\" fiddling, reels, and jigs.  Irish, Canadian, and traditional. </p>",
+   "long_description": "<p>Children's youth chapter of the NYSOTFA.  Play traditional, Canadian, and Irish fiddle tunes.  </p>",
+   "url": "https://www.nysotfa.com/fiddlinfuture",
+   "stage_id": 6,
+   "day_id": 3,
+   "start_time": "02:30 PM",
+   "end_time": "02:45 PM",
+   "photo": "/images/photos/28.jpg"
+  },
+  {
+   "id": 29,
+   "title": "Fingerlakes Magic Club/ International Brotherhood of Magicians",
+   "description": "<p>Childern's Entertainment</p>",
+   "long_description": "<p>MAGICIANS, VENTRILOQUIST, MENTALIST w/ audience inter-action, etc.</p>",
+   "url": "https://www.magician.org/about/local-ibm-rings?state=New%20York",
+   "stage_id": 6,
+   "day_id": 3,
+   "start_time": "05:15 PM",
+   "end_time": "06:10 PM",
+   "photo": "/images/photos/29.jpg"
+  },
+  {
+   "id": 30,
+   "title": "Freeing your Voice",
+   "description": "<p>Ithaca-based soul singer and teacher Elisa S. Keeler</p>",
+   "long_description": "<p>Elisa resides in Ithaca NY and has been teaching world music workshops since 2003. She is the founder of The Joy of Group Singing Program for adults and the grant funded Music For Unity and Social Change Program for public schools. She leads and sings with the Honey Child Soul Quintet. Elisa also sings harmony vocals with Travis Knapp and was the lead singer and song writer for the band Solstice. Her conscious soul album Red Sky was released in 2009. In 2011 Elisa became an assistant teacher of the Hidden Treasure Program, a 3-year course in healing and personal growth, at Light on the Hill Retreat Center.</p>",
+   "url": "https://elisamusic.com/freeing-your-voice",
+   "stage_id": 2,
+   "day_id": 3,
+   "start_time": "12:00 PM",
+   "end_time": "01:45 PM",
+   "photo": "/images/photos/30.jpg"
+  },
+  {
+   "id": 31,
+   "title": "Gabriel Tavares",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Solo Electric Guitar and vocals. Afrodelic/Rock/Blues</p>",
+   "url": "https://gabrieltavares.bandcamp.com/",
+   "stage_id": 2,
+   "day_id": 2,
+   "start_time": "03:10 PM",
+   "end_time": "04:00 PM",
+   "photo": "/images/photos/31.jpg"
+  },
+  {
+   "id": 32,
+   "title": "GIAC Jumpers",
+   "description": "<p>Dance</p>",
+   "long_description": "<p>The GIAC Jumpers is a 2nd-5th grade performance group from the Greater Ithaca Activities Center that entertain through African Dance, Step, and Jump Rope. </p>",
+   "url": "https://www.cityofithaca.org/327/Greater-Ithaca-Activities-Center",
+   "stage_id": 5,
+   "day_id": 3,
+   "start_time": "12:00 PM",
+   "end_time": "12:50 PM",
+   "photo": "/images/photos/32.jpg"
+  },
+  {
+   "id": 33,
+   "title": "GIAC Jumpers",
+   "description": "<p>Dance</p>",
+   "long_description": "<p>The GIAC Jumpers is a 2nd-5th grade performance group from the Greater Ithaca Activities Center that entertain through African Dance, Step, and Jump Rope. </p>",
+   "url": "https://www.cityofithaca.org/327/Greater-Ithaca-Activities-Center",
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "01:30 PM",
+   "end_time": "01:45 PM",
+   "photo": "/images/photos/33.jpg"
+  },
+  {
+   "id": 34,
+   "title": "Greatest Common Factor (GCF Dance)",
+   "url": "https://www.reverbnation.com/greatestcommonfactorgcf",
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "03:30 PM",
+   "end_time": "04:00 PM",
+   "photo": "/images/photos/34.jpg"
+  },
+  {
+   "id": 35,
+   "title": "Gunpoets",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Live band, high-energy, family-friendly hip hop </p>",
+   "url": "https://www.gunpoets.com",
+   "stage_id": 1,
+   "day_id": 2,
+   "start_time": "08:00 PM",
+   "end_time": "10:00 PM",
+   "photo": "/images/photos/35.jpg"
+  },
+  {
+   "id": 36,
+   "title": "Hilby the German Juggling Boy",
+   "description": "<p>juggling comedy</p>",
+   "long_description": "<p>As a boy growing up in Berlin, young Hilby boasted no traumatic childhood experiences and exhibited no particular talents other than making funny faces at strangers and, as Hilby himself describes it, \"breezing rhyzmically.\" Hilby grew up doing all the fun things that people do when they're not in school until they began to call him a grown-up. That's when he packed up his old kit bag, gave his mom a big kiss on the cheek, and set out on a journey that was to lead him all over the world.</p>",
+   "url": "https://www.hilby.net",
+   "stage_id": 6,
+   "day_id": 2,
+   "start_time": "05:15 PM",
+   "end_time": "06:05 PM",
+   "photo": "/images/photos/36.jpg"
+  },
+  {
+   "id": 37,
+   "title": "Hilby the German Juggling Boy",
+   "description": "<p>juggling comedy</p>",
+   "long_description": "<p>As a boy growing up in Berlin, young Hilby boasted no traumatic childhood experiences and exhibited no particular talents other than making funny faces at strangers and, as Hilby himself describes it, \"breezing rhyzmically.\" Hilby grew up doing all the fun things that people do when they're not in school until they began to call him a grown-up. That's when he packed up his old kit bag, gave his mom a big kiss on the cheek, and set out on a journey that was to lead him all over the world.</p>",
+   "url": "https://www.hilby.net",
+   "stage_id": 5,
+   "day_id": 3,
+   "start_time": "01:00 PM",
+   "end_time": "01:45 PM",
+   "photo": "/images/photos/37.jpg"
+  },
+  {
+   "id": 38,
+   "title": "Hula Hut Polynesian Dance",
+   "description": "<p>Dance</p>",
+   "long_description": "<p>Authentic Polynesian dance performance </p>",
+   "url": "http://www.hulahut.org",
+   "stage_id": 5,
+   "day_id": 2,
+   "start_time": "02:00 PM",
+   "end_time": "02:40 PM",
+   "photo": "/images/photos/38.jpg"
+  },
+  {
+   "id": 39,
+   "title": "Israeli Dance Group",
+   "description": "<p>Dance</p>",
+   "long_description": "<p>Israeli Folk Dances featuring circle dances, line dances, and couples dances, from the pioneer days to modern day</p>",
+   "stage_id": 2,
+   "day_id": 4,
+   "start_time": "02:00 PM",
+   "end_time": "02:40 PM",
+   "photo": "/images/photos/39.jpg"
+  },
+  {
+   "id": 40,
+   "title": "ITHACA Ballet",
+   "description": "<p>Dance</p>",
+   "long_description": "<p>contemporary or classical ballet</p>",
+   "url": "http://www.ithacaballet.org",
+   "stage_id": 5,
+   "day_id": 3,
+   "start_time": "03:30 PM",
+   "end_time": "04:15 PM",
+   "photo": "/images/photos/40.jpg"
+  },
+  {
+   "id": 41,
+   "title": "Ithaca Capoeira Center: Angola Quintal",
+   "description": "<p>Live, percussive instruments with singing and acrobatics/balancing feats</p>",
+   "long_description": "<p>Capoeira is a martial art disguised as a dance. It was created by enslaved Africans in Brazil, and later spread across the world. A group of musicians play live instruments and sing songs while pairs of \"capoeiristas\" perform a sparring dances with each other, as playful games. There are impressive acrobatics, feats of balance, and narrow escapes from danger-- all wound together within a traditional and improvised dance.</p>",
+   "url": "https://www.ithacacapoeira.com",
+   "stage_id": 6,
+   "day_id": 3,
+   "start_time": "07:30 PM",
+   "end_time": "08:00 PM",
+   "photo": "/images/photos/41.jpg"
+  },
+  {
+   "id": 42,
+   "title": "Ithaca Community Poets",
+   "description": "<p>Spoken Word</p>",
+   "long_description": "<p>First Tompkins County Poet Laureate Katharyn Howd Machan's poems about dance, BELLY WORDS, come off the page with music by Taksim accompanying oral reading by local poets and interpretation by area dancers.</p>",
+   "url": "http://www.ithacapoetry.com/",
+   "stage_id": 3,
+   "day_id": 3,
+   "start_time": "01:00 PM",
+   "end_time": "02:30 PM",
+   "photo": "/images/photos/42.jpg"
+  },
+  {
+   "id": 43,
+   "title": "Ithaca Concert Band",
+   "description": "<p>Concert band -- approx 60 people</p>",
+   "long_description": "<p>The Ithaca Concert Band is entering it's 41st season as Ithaca's Premier Community Concert band.  All of our members are volunteers, and we play a mixture of band classics and contemporary works.</p>",
+   "url": "http://ithacaconcertband.org",
+   "stage_id": 2,
+   "day_id": 4,
+   "start_time": "06:30 PM",
+   "end_time": "07:20 PM",
+   "photo": "/images/photos/43.jpg"
+  },
+  {
+   "id": 44,
+   "title": "Ithaca Karate Harmony with Nature School",
+   "description": "<p>Music & Karate</p>",
+   "long_description": "<p>the art and music of ithaca karate harmony with nature school.  </p>",
+   "url": "https://www.ithacakarate.com",
+   "stage_id": 5,
+   "day_id": 2,
+   "start_time": "01:00 PM",
+   "end_time": "12:00 PM",
+   "photo": "/images/photos/44.jpg"
+  },
+  {
+   "id": 45,
+   "title": "Jamelody",
+   "description": "<p>Reggae</p>",
+   "long_description": "<p>Michael \"Jamelody\" Williams was born in Carenage Trinidad in 1980. The baby of six children, it was not long before his parents and older siblings realized that he was a very gifted vocalist and musician. As a member of this very spiritual family it was almost destined that young Michael would be part of the church choir. There, he expanded his vocal ability while embracing his religion. As a teenager he started to apply his vocal skills to making reggae compositions with sweet melodies and hooks in a style very characteristic of the R&B he had been singing earlier in his life but with rich cultural and spiritual content. This is why he took the name \"Jamelody\" (Jah Melody) It was at a captivating performance as an opening act for a reggae show in Port of Spain which brought him to the attention of his current manager who immediately took him to Jamaica to begin recording. On a second trip to Jamaica he was introduced to Bobby \"Digital\" Dixon, ace producer and owner of the well known record label Digital B. The sweet sound of Jamelody -- as heard on the single \"Pressure\", taken from his forthcoming VP album,to be released in September 2007 -- is a result of their amazing collaborative effort and musical chemistry.</p>",
+   "url": "https://www.facebook.com/pg/Jamelody/",
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "07:45 PM",
+   "end_time": "09:00 PM",
+   "photo": "/images/photos/45.jpg"
+  },
+  {
+   "id": 46,
+   "title": "Janet Batch",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Alternative country music</p>",
+   "url": "http://janetbatch.com",
+   "stage_id": 1,
+   "day_id": 2,
+   "start_time": "02:00 PM",
+   "end_time": "02:50 PM",
+   "photo": "/images/photos/46.jpg"
+  },
+  {
+   "id": 47,
+   "title": "Jen Cork",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>One woman. One pedal. One guitar.  Worlds of harmony.</p>",
+   "url": "https://jencork.com",
+   "stage_id": 3,
+   "day_id": 4,
+   "start_time": "02:55 PM",
+   "end_time": "03:45 PM",
+   "photo": "/images/photos/47.jpg"
+  },
+  {
+   "id": 48,
+   "title": "Jennie Stearns",
+   "description": "<p>singer songwriter</p>",
+   "long_description": "<p>Jennie Stearns is a classic American songwriter. By turns heartbreaking and hopeful, her songs are evocative, poignant and haunting. Quintessentially human. Her strong yet intimate vocal style and the vivid imagery portrayed by her lyrics gently draw the listener into her world. Despite the often sombre mood, you'll find yourself strangely at one with her perspective, akin to the intimate atmosphere of a late-night red-wine-confessional with a lifelong, much-loved friend.</p>",
+   "url": "https://www.facebook.com/jennielowestearns/",
+   "stage_id": 3,
+   "day_id": 3,
+   "start_time": "04:00 PM",
+   "end_time": "05:00 PM",
+   "photo": "/images/photos/48.jpg"
+  },
+  {
+   "id": 49,
+   "title": "Josh Oxford CD Release",
+   "description": "<p>synthesizer compositions</p>",
+   "long_description": "<p>Electronisist Josh Oxford, born in 1985, is a composer, arranger, and performer of myriad styles of music. Using his collection of vintage synthesizers, Josh is the leader of “The OXtet,” a jazz fusion ensemble for which Oxford composes all the music. He has performed throughout the country, especially in his native central New York, on piano, percussion, and Moog synthesizer.</p>",
+   "url": "https://www.joshoxford.com/music",
+   "stage_id": 1,
+   "day_id": 3,
+   "start_time": "05:15 PM",
+   "end_time": "06:10 PM",
+   "photo": "/images/photos/49.jpg"
+  },
+  {
+   "id": 50,
+   "title": "June with Chandani Belly Dance Troupe",
+   "description": "<p>Dance</p>",
+   "long_description": "<p>Middle Eastern Belly Dance - traditional Middle Eastern dances performed to Middle Eastern music from Egypt, Lebanon and Turkey in traditional costumes of these countries, under the direction of June Seaney, Professional Middle Eastern Belly Dancer, Instructor and Choreographer </p>",
+   "url": "https://moonlightdancer.com/chandani/",
+   "stage_id": 5,
+   "day_id": 2,
+   "start_time": "12:00 PM",
+   "end_time": "12:45 PM",
+   "photo": "/images/photos/50.jpg"
+  },
+  {
+   "id": 51,
+   "title": "June with Chandani Belly Dance Troupe Cayuga",
+   "description": "<p>Dance</p>",
+   "long_description": "<p>Middle Eastern Belly Dance - traditional Middle Eastern dances performed to Middle Eastern music from Egypt, Lebanon and Turkey in traditional costumes of these countries, under the direction of June Seaney, Professional Middle Eastern Belly Dancer, Instructor and Choreographer </p>",
+   "url": "https://moonlightdancer.com/chandani/",
+   "stage_id": 5,
+   "day_id": 2,
+   "start_time": "04:20 PM",
+   "end_time": "05:00 PM",
+   "photo": "/images/photos/51.jpg"
+  },
+  {
+   "id": 52,
+   "title": "Junkyard Theory",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Junkyard Theory is downtempo electronic duo blurring the lines between a DJ set and a live performance.  Touching on all genres from reggae to house and drum n bass, all of our music is originally produced and mixed live with an emphasis on extended jams and improvisation.  </p><p>\nFronted by the soaring flute and haunting, ethereal vocals of SensE and accompanied by sample-heavy, spacey beats and scratching from Proper Philth.  </p>",
+   "url": "https://junkyardtheory.bandcamp.com/",
+   "stage_id": 3,
+   "day_id": 3,
+   "start_time": "06:30 PM",
+   "end_time": "07:30 PM",
+   "photo": "/images/photos/52.jpg"
+  },
+  {
+   "id": 53,
+   "title": "KidBess and the Magic Ring",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Indie-rock</p>",
+   "url": "http://www.kidbess.com",
+   "stage_id": 2,
+   "day_id": 2,
+   "start_time": "02:00 PM",
+   "end_time": "02:50 PM",
+   "photo": null
+  },
+  {
+   "id": 54,
+   "title": "Kurt Lichtmann",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Ithaca's favorite street singer sings Spanish language classical-pop vocal repertoire, all in Spanish. Recognize your Latino audience! Favorite Spanish songs from the repertoire of Julio Iglesias, Placido Domingo, Rolando Villazon, Antonio Banderas, and Andrea Bocelli (true, he is Italian, but his version of \"Besame Mucho\" is 2nd to none!) I will also give a short synopsis of each song in English for the gringos.</p>",
+   "url": "http://www.ithacadance.com/concert",
+   "stage_id": 5,
+   "day_id": 3,
+   "start_time": "11:00 AM",
+   "end_time": "11:45 AM",
+   "photo": "/images/photos/54.jpg"
+  },
+  {
+   "id": 55,
+   "title": "Kurt Riley",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Metapop.</p>",
+   "url": "http://www.kurtriley.com/",
+   "stage_id": 1,
+   "day_id": 3,
+   "start_time": "06:30 PM",
+   "end_time": "07:30 PM",
+   "photo": "/images/photos/55.jpg"
+  },
+  {
+   "id": 56,
+   "title": "Laila Belle",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Laila Belle plays original country music that rocks as much as it rolls!</p>",
+   "url": "http://www.lailabelle.com",
+   "stage_id": 4,
+   "day_id": 4,
+   "start_time": "06:30 PM",
+   "end_time": "08:00 PM",
+   "photo": null
+  },
+  {
+   "id": 57,
    "title": "Li'l Anne and Hot Cayenne",
-   "description": "<p>zydeco/roots</p>",
+   "description": "<p>Amplified Music</p>",
    "long_description": "<p>Take half a dozen groovemasters, add a spicy blend of rock ‘n’ roll, blues, and funk to the up-tempo Zydeco beat, and presto, you’ve got a dance groove that just won’t quit! Taking the Northeast Zydeco scene by storm, Li’l Anne & Hot Cayenne have been invited to play a variety of prestigious venues including the Rhythm and Roots Festival in Charlestown, RI, The Great Connecticut Cajun/Zydeco Music & Arts Festival, and the renowned Saratoga Springs Dance Flurry. In addition, the band has been invited to play venues typically reserved for Louisiana Zydeco bands such as Johnny D’s in Sommerville, MA, La Belle Époque, NYC; the TK Club, Phila., PA and the Somebody Scream Dance Series, Baltimore, MD. Li’l Anne & Hot Cayenne has also appeared with and provided back-up to Willis Prudhomme and has been invited on stage with Zydeco Force, Sean Ardoin and Zydekool, Leroy Thomas and Roy Carrier</p>",
    "url": "http://www.lilanneandhotcayenne.com",
-   "stage": "Press Bay",
-   "day": "Sunday",
-   "time": "07:20 AM - 08:10 AM"
+   "stage_id": 4,
+   "day_id": 4,
+   "start_time": "12:20 PM",
+   "end_time": "01:10 PM",
+   "photo": "/images/photos/57.jpg"
   },
   {
-   "title": "Rye Makepeace and Straw Hat",
-   "description": "<p>rock</p>",
-   "stage": "Press Bay",
-   "day": "Sunday",
-   "time": "08:40 AM - 09:30 AM"
-  },
-  {
-   "title": "Colleen Kattau & Dos XX",
-   "stage": "Press Bay",
-   "day": "Sunday",
-   "time": "09:50 AM - 10:40 AM"
-  },
-  {
-   "title": "UpSouth",
-   "stage": "Press Bay",
-   "day": "Sunday",
-   "time": "07:00 AM - 11:50 AM"
-  },
-  {
-   "title": "Whistlin Dyl",
-   "stage": "Press Bay",
-   "day": "Sunday",
-   "time": "12:10 PM - 01:00 PM"
-  },
-  {
-   "title": "Laila Belle",
-   "stage": "Press Bay",
-   "day": "Sunday",
-   "time": "01:30 PM - 03:00 PM"
-  },
-  {
-   "title": "Damodar Das Kirtan",
-   "stage": "Dewitt",
-   "day": "Friday",
-   "time": "07:00 AM - 07:45 AM"
-  },
-  {
-   "title": "Corey Loveless",
-   "stage": "Dewitt",
-   "day": "Friday",
-   "time": "08:00 AM - 08:45 AM"
-  },
-  {
-   "title": "KidBess and the Magic Ring",
-   "stage": "Dewitt",
-   "day": "Friday",
-   "time": "09:00 AM - 09:50 AM"
-  },
-  {
-   "title": "Gabriel Tavares",
-   "stage": "Dewitt",
-   "day": "Friday",
-   "time": "10:10 AM - 11:00 AM"
-  },
-  {
-   "title": "Remanu Panther",
-   "stage": "Dewitt",
-   "day": "Friday",
-   "time": "11:20 AM - 12:00 PM"
-  },
-  {
-   "title": "Rock Jones",
-   "stage": "Dewitt",
-   "day": "Friday",
-   "time": "12:20 PM - 01:10 PM"
-  },
-  {
-   "title": "Wingnut",
-   "stage": "Dewitt",
-   "day": "Friday",
-   "time": "01:30 PM - 02:40 PM"
-  },
-  {
+   "id": 58,
    "title": "LilySilly Puppets",
-   "stage": "Dewitt",
-   "day": "Saturday",
-   "time": "07:00 AM - 06:45 PM"
+   "description": "<p>Childern's Entertainment</p>",
+   "long_description": "<p>Aunt Irene' and the Witch</p><p>Aunt Irene’s show is filled with music and fantastic variety acts. See a singing sloth, the mysterious Linked Lizard, Rosita the flamenco dancer and Wanda the Wizard. Things seem to go awry as a needy witch casts spells to compete with acts and musical numbers. Live music by classically trained guitarist Matthew Ocone. Songs in Spanish, English, Russian and French.</p>",
+   "url": "http://www.lilysilly.com",
+   "stage_id": 2,
+   "day_id": 3,
+   "start_time": "11:00 AM",
+   "end_time": "11:45 AM",
+   "photo": "/images/photos/58.jpg"
   },
   {
-   "title": "Blue Cayuga Jazz",
-   "stage": "Dewitt",
-   "day": "Saturday",
-   "time": "07:00 AM - 07:50 AM"
+   "id": 59,
+   "title": "Maddy Walsh and The Blind Spots",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Homegrown, high-energy, female-fronted, socially conscious Moxy Rock</p>",
+   "url": "http://www.theblindspots.com",
+   "stage_id": 1,
+   "day_id": 3,
+   "start_time": "08:00 PM",
+   "end_time": "10:00 PM",
+   "photo": "/images/photos/59.jpg"
   },
   {
-   "title": "Freeing your Voice",
-   "stage": "Dewitt",
-   "day": "Saturday",
-   "time": "07:00 AM - 08:45 AM"
-  },
-  {
-   "title": "Papa Muse",
-   "stage": "Dewitt",
-   "day": "Saturday",
-   "time": "09:00 AM - 09:30 AM"
-  },
-  {
-   "title": "Zajal the Sugarplum Fairy--and Friends!",
-   "stage": "Dewitt",
-   "day": "Saturday",
-   "time": "09:50 AM - 10:40 AM"
-  },
-  {
-   "title": "Strange Heavy",
-   "stage": "Dewitt",
-   "day": "Saturday",
-   "time": "11:00 AM - 11:55 AM"
-  },
-  {
-   "title": "the ilium works",
-   "stage": "Dewitt",
-   "day": "Saturday",
-   "time": "12:15 PM - 01:10 PM"
-  },
-  {
-   "title": "Cozmic Theo",
-   "stage": "Dewitt",
-   "day": "Saturday",
-   "time": "01:30 PM - 02:30 PM"
-  },
-  {
+   "id": 60,
    "title": "Mark Rust",
-   "stage": "Dewitt",
-   "day": "Sunday",
-   "time": "07:00 AM - 07:45 AM"
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>Mark Rust is an Ithaca Festival favorite & tradition, performing at every Festival since 1978. The author of Ithaca’s unofficial anthem “Ithaca Sunset”, Mark sings songs about Ithaca, family & friends, as well as the ever popular Ithaca Festival Theme Songs he has written for each year.</p>",
+   "url": "http://www.markrust.com",
+   "stage_id": 2,
+   "day_id": 4,
+   "start_time": "12:00 PM",
+   "end_time": "12:45 PM",
+   "photo": "/images/photos/60.jpg"
   },
   {
-   "title": "Taksim",
-   "stage": "Dewitt",
-   "day": "Sunday",
-   "time": "08:00 AM - 07:00 AM"
+   "id": 61,
+   "title": "Mary Lorson and Billy Cote",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Original jazz-inflected artrock with multiple vocals and keyboardists</p>",
+   "url": "http://www.marylorson.com",
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "02:55 PM",
+   "end_time": "03:45 PM",
+   "photo": "/images/photos/61.jpg"
   },
   {
-   "title": "Israeli Dance Group",
-   "stage": "Dewitt",
-   "day": "Sunday",
-   "time": "09:00 AM - 09:40 AM"
+   "id": 62,
+   "title": "Matt O'Brian",
+   "stage_id": 3,
+   "day_id": 2,
+   "start_time": "04:20 PM",
+   "end_time": "05:00 PM",
+   "photo": "/images/photos/62.jpg"
   },
   {
-   "title": "Auntie Emo's Ukulele Showcase or Workshop",
-   "stage": "Dewitt",
-   "day": "Sunday",
-   "time": "09:55 AM - 10:45 AM"
+   "id": 63,
+   "title": "Matthew Cornwell",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Matthew Cornwell is an emerging singer/songwriter out of Binghamton, NY. Delievering an eclectic blend of R&B, Rock, and Blues with originals and covers ranging from Stevie Wonder to Chris Stapleton, Matthew is quickly gaining a reputation for energy-packed shows that are enjoyable for all ages. </p>",
+   "url": "http://www.matthewcornwellmusic.com",
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "01:00 PM",
+   "end_time": "01:30 PM",
+   "photo": "/images/photos/63.jpg"
   },
   {
-   "title": "Two Tequilas and a Gin",
-   "stage": "Dewitt",
-   "day": "Sunday",
-   "time": "11:05 AM - 11:50 AM"
+   "id": 64,
+   "title": "Mbusi",
+   "description": "<p>R&B</p>",
+   "long_description": "<p>Born in south Africa, raised in ny. Mbusi is the truth. Pouring out his life experiences on every track singing with his talented voice. Touching the hearts and minds of every person he comes across. His music can be describe as mesmerizing. And as of late has been described as the r&b king. Take a minute and check out some of our videos..Join the movement of this talented new r&b musician</p>",
+   "url": "https://www.reverbnation.com/mbusirbking",
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "07:15 PM",
+   "end_time": "07:45 PM",
+   "photo": "/images/photos/64.jpg"
   },
   {
-   "title": "Boynton Middle School Chamber Orchestra",
-   "stage": "Dewitt",
-   "day": "Sunday",
-   "time": "12:15 PM - 01:05 PM"
+   "id": 65,
+   "title": "Mirage Belly Dancers of Ithaca",
+   "description": "<p>belly dance</p>",
+   "long_description": "<p>We are a multi-generational belly dance troupe originating out of Ithaca's Community School of Music and Arts. The troupe has been in existence for more than 30 years and we're still going strong. Invite us to join your next celebration!</p>",
+   "url": "https://www.facebook.com/Miragebellydancetroupe/",
+   "stage_id": 5,
+   "day_id": 2,
+   "start_time": "06:30 PM",
+   "end_time": "07:40 PM",
+   "photo": "/images/photos/65.jpg"
   },
   {
-   "title": "Ithaca Concert Band",
-   "stage": "Dewitt",
-   "day": "Sunday",
-   "time": "01:30 PM - 02:20 PM"
+   "id": 66,
+   "title": "Mstr McBean",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Potentially mind blowing lyrics over absolutely mind blowing hip-hop beats, backed by one of the best drummers around and an electrifying DJ.</p>",
+   "url": "http://www.smackedrecords.com",
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "04:00 PM",
+   "end_time": "04:45 PM",
+   "photo": "/images/photos/66.jpg"
   },
   {
-   "title": "Delta Blues by Gerard Burke",
-   "stage": "Monks",
-   "day": "Friday",
-   "time": "10:10 AM - 11:00 AM"
+   "id": 67,
+   "title": "Mutron Warriors",
+   "url": "https://www.facebook.com/mutronwarriors/",
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "05:15 PM",
+   "end_time": "06:05 PM",
+   "photo": "/images/photos/67.jpg"
   },
   {
-   "title": "Matt Obrian",
-   "stage": "Monks",
-   "day": "Friday",
-   "time": "11:20 AM - 12:00 PM"
+   "id": 68,
+   "title": "Neo Project",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>R&B Funk band</p>",
+   "url": "https://www.facebook.com/NeoProjectBand",
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "11:30 AM",
+   "end_time": "12:30 PM",
+   "photo": "/images/photos/68.jpg"
   },
   {
-   "title": "Angie Beeler",
-   "stage": "Monks",
-   "day": "Friday",
-   "time": "12:20 PM - 01:10 PM"
+   "id": 69,
+   "title": "One Heart Community drumming",
+   "description": "<p>The drum circle is open to everyone</p>",
+   "long_description": "<p>One Heart Community Drumming is an open drum circle based in Ithaca, NY, welcoming all ages, levels of interest, and abilities. There is no specific \"leader\", rather we take turns facilitating the jam. It is helpful to bring your own drum but we usually have extras to share as well as shakers, bells etc.</p>",
+   "url": "http://www.oneheartcommunitydrumming.org",
+   "stage_id": 6,
+   "day_id": 3,
+   "start_time": "06:15 PM",
+   "end_time": "06:30 PM",
+   "photo": "/images/photos/69.jpg"
   },
   {
-   "title": "EvoEvolution",
-   "stage": "Monks",
-   "day": "Friday",
-   "time": "01:30 PM - 02:40 PM"
+   "id": 70,
+   "title": "Palleon",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>From Trumansburg, NY, the birthplace of Robert Moog's first modular synthesizer, comes Chris Ploss' \"Palleon\": groovy, hooky synthpop music.</p>",
+   "url": "http://palleonmusic.com",
+   "stage_id": 1,
+   "day_id": 3,
+   "start_time": "02:00 PM",
+   "end_time": "02:30 PM",
+   "photo": "/images/photos/70.jpg"
   },
   {
-   "title": "Ithaca Community Poets",
-   "stage": "Monks",
-   "day": "Saturday",
-   "time": "07:00 AM - 08:45 AM"
+   "id": 71,
+   "title": "Papa Muse",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Indie rock and world music with catchy hooks and funky dance-able grooves, Papa Muse has been compared to the Talking Heads, Vampire Weekend, Paul Simon, Devo and even Rush. </p><p>\nThe songs are polished and often move in different directions to make them unpredictable and fresh and with meaningful lyrics they are relatable and easy to digest. The live show is dynamic and interactive, so while the message behind the music can be deep and introspective, the live show is light, whimsical and fun. \"I want to inspire a sense of community empowerment and affect positive change, but without sounding preachy, so I try to keep my live show light and fun while singing about what matters most.\"</p>",
+   "url": "http://www.papamuse.com",
+   "stage_id": 2,
+   "day_id": 3,
+   "start_time": "02:00 PM",
+   "end_time": "02:30 PM",
+   "photo": "/images/photos/71.jpg"
   },
   {
+   "id": 72,
+   "title": "Paul Aaron Jackson",
+   "url": null,
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "01:45 PM",
+   "end_time": "02:15 PM",
+   "photo": null
+  },
+  {
+   "id": 73,
+   "title": "Pete Panek & The Blue Cats",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>High Energy Chicago Style Blues and Panek Originals</p>",
+   "url": "https://www.facebook.com/PetePanekandTheBlueCats/",
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "02:00 PM",
+   "end_time": "02:40 PM",
+   "photo": "/images/photos/73.jpg"
+  },
+  {
+   "id": 74,
+   "title": "Proper Philth",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>A local DJ known for spinning disco, funk, house, and reggae.</p>",
+   "stage_id": 3,
+   "day_id": 3,
+   "start_time": "08:00 PM",
+   "end_time": "10:00 PM",
+   "photo": null
+  },
+  {
+   "id": 75,
    "title": "Rachel Beverly",
-   "stage": "Monks",
-   "day": "Saturday",
-   "time": "09:50 AM - 10:40 AM"
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>Local musician who loves to sing within and to the community! Enjoys performing an array of originals, upbeat covers, and unexpected mashups. </p>",
+   "url": "http://rachelbeverlymusic.com",
+   "stage_id": 3,
+   "day_id": 3,
+   "start_time": "02:50 PM",
+   "end_time": "03:40 PM",
+   "photo": "/images/photos/75.jpg"
   },
   {
-   "title": "Jennie Stearns",
-   "stage": "Monks",
-   "day": "Saturday",
-   "time": "11:00 AM - 12:00 PM"
+   "id": 76,
+   "title": "Remanu Panther",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>A full performance of Panther on Piano (Full album on Spotify here: https://goo.gl/iZGt54)  (Single from the album here: https://goo.gl/8jS3wC) with special guests. Possibly a teaser from upcoming food album. </p>",
+   "url": "https://linktr.ee/rempanther",
+   "stage_id": 2,
+   "day_id": 2,
+   "start_time": "04:20 PM",
+   "end_time": "05:00 PM",
+   "photo": "/images/photos/76.jpg"
   },
   {
-   "title": "Venissa Santi",
-   "stage": "Monks",
-   "day": "Saturday",
-   "time": "12:15 PM - 01:10 PM"
+   "id": 77,
+   "title": "Road Man",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Funky soul and reggae!</p>",
+   "url": "http://www.roadman.us/",
+   "stage_id": 1,
+   "day_id": 2,
+   "start_time": "06:30 PM",
+   "end_time": "07:40 PM",
+   "photo": "/images/photos/77.jpg"
   },
   {
-   "title": "Junkyard Theory",
-   "stage": "Monks",
-   "day": "Saturday",
-   "time": "01:30 PM - 02:30 PM"
+   "id": 78,
+   "title": "Rock Jones",
+   "stage_id": 2,
+   "day_id": 2,
+   "start_time": "05:20 PM",
+   "end_time": "06:10 PM",
+   "photo": null
   },
   {
-   "title": "proper filth",
-   "stage": "Monks",
-   "day": "Saturday",
-   "time": "03:00 PM - 05:00 PM"
+   "id": 79,
+   "title": "Rosie and the Bros",
+   "description": "<p>zydeco and cajun dance</p>",
+   "long_description": "<p>Rose & The Bros are a powerhouse ensemble specializing in irresistible Zydeco and Cajun dance grooves resonating with sweet vocal harmonies and crooning country roots. With a shared dream to simply have a blast while making people dance without stopping, Rosie Newton, Paul Martin, and Steve Selin set out to collect tunes and the rare ingredients of a no holds barred Zydeco and Cajun dance party. Once the trio had found their undeniable rhythm section in drummer Greg Evans, bassist Angelo Peters, and rub board/triangle player Sally Freund, Rose & The Bros became a six piece instant party and the band was complete. Now, Rose & The Bros continue forward, gathering strength and a warm following with infectious joy, a love for community, and a rollicking good time.</p>",
+   "url": "https://www.roseandthebros.com/photos",
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "07:45 PM",
+   "end_time": "09:00 PM",
+   "photo": "/images/photos/79.jpg"
   },
   {
-   "title": "Jen Cork",
-   "stage": "Monks",
-   "day": "Sunday",
-   "time": "09:55 AM - 10:45 AM"
+   "id": 80,
+   "title": "Rye Makepeace and Straw Hat",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Festival Rock w/ Kieran Riley Makepeace, Juge Greenspun, Owen Erickson, Jason Shegogue  </p>",
+   "url": "http://ryemakepeace.com",
+   "stage_id": 4,
+   "day_id": 4,
+   "start_time": "01:40 PM",
+   "end_time": "02:30 PM",
+   "photo": "/images/photos/80.jpg"
   },
   {
-   "title": "Andrew Alling",
-   "stage": "Monks",
-   "day": "Sunday",
-   "time": "11:05 AM - 11:50 AM"
+   "id": 81,
+   "title": "Seishi Karate",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Seishi Karate Action Performances, Music, Demonstrations, </p><p>Family Entertainment & Fun.</p>",
+   "url": "http://seishikarate.vzwebsites.com",
+   "stage_id": 1,
+   "day_id": 3,
+   "start_time": "01:00 PM",
+   "end_time": "01:45 PM",
+   "photo": "/images/photos/81.jpg"
   },
   {
+   "id": 82,
+   "title": "Sheneque Rowe",
+   "url": null,
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "04:45 PM",
+   "end_time": "05:30 PM",
+   "photo": null
+  },
+  {
+   "id": 83,
    "title": "Sing Trece",
-   "stage": "Monks",
-   "day": "Sunday",
-   "time": "12:15 PM - 01:05 PM"
+   "url": null,
+   "stage_id": 3,
+   "day_id": 4,
+   "start_time": "05:15 PM",
+   "end_time": "06:05 PM",
+   "photo": null
+  },
+  {
+   "id": 84,
+   "title": "Sing Trece and the Sheremonies",
+   "url": null,
+   "stage_id": 4,
+   "day_id": 4,
+   "start_time": "06:15 PM",
+   "end_time": "07:15 PM",
+   "photo": "/images/photos/84.jpg"
+  },
+  {
+   "id": 85,
+   "title": "Strange Heavy",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Strange Heavy features hauntingly sultry vocals backed by bluesy cello and rocking guitar and drums. Two people, original music, just the right weight. </p>",
+   "url": "http://www.strangeheavy.com",
+   "stage_id": 2,
+   "day_id": 3,
+   "start_time": "04:00 PM",
+   "end_time": "04:55 PM",
+   "photo": "/images/photos/85.jpg"
+  },
+  {
+   "id": 86,
+   "title": "Swamp Kids and Friends",
+   "description": "<p>Folk/Rock/Funk/Roots</p>",
+   "long_description": "<p>Swamp Kids' psychedelic blend of Folk/Rock/Funk/Roots is inspired by the sounds of yesterday and the possibilities of tomorrow.</p>",
+   "url": "https://swampkidsmusic.com/",
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "07:45 PM",
+   "end_time": "09:00 PM",
+   "photo": null
+  },
+  {
+   "id": 87,
+   "title": "Taksim",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Taksim Ithaca plays well-known and uncommon songs from Arabic countries, Turkey, Greece, Iran, Jewish enclaves, and more. We are happy to bring this cultural richness to Ithaca. </p>",
+   "url": "https://taksimithaca.wordpress.com/",
+   "stage_id": 2,
+   "day_id": 4,
+   "start_time": "01:00 PM",
+   "end_time": "01:45 PM",
+   "photo": "/images/photos/87.jpg"
+  },
+  {
+   "id": 88,
+   "title": "The Analogue Sons",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Dub Soul Rockers outfit features Lee Hamilton - saxophone, Michael Stark - organ, bass, synth, Lars Burggren - drum kit, Aaron Speiser - dubs, melodica, Alicia Aubin - trombone, and Jason Shegogue - guitar. The Analogue Sons fire up original uplifting sound, deep groove, triumphant melody, and distinct song.</p>",
+   "url": "http://www.theanaloguesons.com",
+   "stage_id": 1,
+   "day_id": 2,
+   "start_time": "04:20 PM",
+   "end_time": "05:00 PM",
+   "photo": "/images/photos/88.jpg"
+  },
+  {
+   "id": 89,
+   "title": "The Cayuga Wizards",
+   "description": "<p>Magic</p>",
+   "long_description": "<p>a round robin of stage magic performances individually and as a group with audience participation, comedy and stagemanship</p>",
+   "stage_id": 6,
+   "day_id": 2,
+   "start_time": "12:00 PM",
+   "end_time": "12:45 PM",
+   "photo": "/images/photos/89.jpg"
+  },
+  {
+   "id": 90,
+   "title": "The Crucials",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Roots//Reggae w/ special guests </p>",
+   "url": "https://www.facebook.com/crucialsreggae/",
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "06:30 PM",
+   "end_time": "07:20 PM",
+   "photo": "/images/photos/90.jpg"
+  },
+  {
+   "id": 91,
+   "title": "the ilium works",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>We are a local group, playing original music, in the genre of boot-stompin folk-punk and heavy-meadow, performing together for over 5 years.  Featuring vocal harmonies, soaring violin, and a rockin rhythm section.  We have played nearly every local music venue (including ithaca festival) and folks seem to like us.</p>",
+   "url": "http://theiliumworks.bandcamp.com",
+   "stage_id": 2,
+   "day_id": 3,
+   "start_time": "05:15 PM",
+   "end_time": "06:10 PM",
+   "photo": "/images/photos/91.jpg"
+  },
+  {
+   "id": 92,
+   "title": "The Oxtet",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Funk/Jazz Fusion Band</p>",
+   "url": "https://www.joshoxford.com/oxtet",
+   "stage_id": 1,
+   "day_id": 2,
+   "start_time": "01:00 PM",
+   "end_time": "01:45 PM",
+   "photo": "/images/photos/92.jpg"
+  },
+  {
+   "id": 93,
+   "title": "Thru Spectrums",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Thru Spectrums are a 7-piece, original funk rock band guaranteed to get your toes tapping and hips shaking.</p>",
+   "url": "https://www.thruspectrums.com/",
+   "stage_id": 1,
+   "day_id": 4,
+   "start_time": "04:05 PM",
+   "end_time": "04:50 PM",
+   "photo": "/images/photos/93.jpg"
+  },
+  {
+   "id": 94,
+   "title": "Two Tequilas and a Gin",
+   "description": "<p>dance</p>",
+   "long_description": "<p>drag queens</p>",
+   "url": "https://www.facebook.com/twotequilasandagin/",
+   "stage_id": 2,
+   "day_id": 4,
+   "start_time": "04:05 PM",
+   "end_time": "04:50 PM",
+   "photo": "/images/photos/94.jpg"
+  },
+  {
+   "id": 95,
+   "title": "United Dance Troupe",
+   "url": null,
+   "stage_id": 4,
+   "day_id": 3,
+   "start_time": "12:45 PM",
+   "end_time": "01:00 PM",
+   "photo": null
+  },
+  {
+   "id": 96,
+   "title": "UpSouth",
+   "description": "<p>Acoustic Music</p>",
+   "long_description": "<p>old-time mountain music</p>",
+   "url": "http://macbenford.com/index.html",
+   "stage_id": 4,
+   "day_id": 4,
+   "start_time": "04:00 PM",
+   "end_time": "04:50 PM",
+   "photo": "/images/photos/96.jpg"
+  },
+  {
+   "id": 97,
+   "title": "Vee Da Bee",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Vee Da Bee is a female-fronted powerhouse that'll have you singing and entertained.</p>",
+   "url": "http://veedabeemusic.com/",
+   "stage_id": 1,
+   "day_id": 3,
+   "start_time": "02:50 PM",
+   "end_time": "03:40 PM",
+   "photo": "/images/photos/97.jpg"
+  },
+  {
+   "id": 98,
+   "title": "Venissa Santi",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Venissa’s artistry stems from the necessity to express the many influences that have nourished her spirit as a Cuban American. She was born in Ithaca, New York and hails from a long line of Cuban artists. But it was her grandfather, Jacobo Ros Capablanca, a Cuban composer who instilled in her a life-long passion for music.</p>",
+   "url": "http://www.venissasanti.com",
+   "stage_id": 3,
+   "day_id": 3,
+   "start_time": "05:15 PM",
+   "end_time": "06:10 PM",
+   "photo": "/images/photos/98.jpg"
+  },
+  {
+   "id": 99,
+   "title": "Vitamin L",
+   "description": "<p>This is uplifting music for families of all ages</p>",
+   "long_description": "<p>Vitamin L is a well-established singing group comprised of songwriter Jan Nigro and area youth, ages 11-21. They perform a delightful concert of uplifting songs from Vitamin L’s 5 nationally released, award winning recordings. Vitamin L works to help create a caring community of people who treat each other and the Earth with kindness and respect.</p><p>Vitamin L has given over 1,100 performances at schools, festivals and conferences in the last 30 years. An entertaining, energizing, uplifting concert!\n</p>",
+   "url": "https://vitaminl.org",
+   "stage_id": 1,
+   "day_id": 3,
+   "start_time": "12:00 PM",
+   "end_time": "12:50 PM",
+   "photo": "/images/photos/99.jpg"
+  },
+  {
+   "id": 100,
+   "title": "Wassa Pan Afrika Dance Ensemble",
+   "description": "<p>Dance</p>",
+   "long_description": "<p>African drumming and dance performance</p>",
+   "url": "https://www.nanawassaafricandance.com",
+   "stage_id": 1,
+   "day_id": 3,
+   "start_time": "04:00 PM",
+   "end_time": "05:00 PM",
+   "photo": "/images/photos/100.jpg"
+  },
+  {
+   "id": 101,
+   "title": "Whistlin Dyl",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>Crooning ballads and swinging jammers against capitalism in support of Mother Nature...</p>",
+   "url": "https://www.facebook.com/pages/category/Musician-Band/Whistlin-Dyl-430679500445359/",
+   "stage_id": 4,
+   "day_id": 4,
+   "start_time": "05:10 PM",
+   "end_time": "06:00 PM",
+   "photo": "/images/photos/101.jpg"
+  },
+  {
+   "id": 102,
+   "title": "Wingnut",
+   "description": "<p>Amplified Music</p>",
+   "long_description": "<p>An indie instrumental, electric jazz trio playing original music</p>",
+   "url": "https://www.facebook.com/W-I-N-G-N-U-T-142508399119685/",
+   "stage_id": 2,
+   "day_id": 2,
+   "start_time": "06:30 PM",
+   "end_time": "07:40 PM",
+   "photo": "/images/photos/102.jpg"
+  },
+  {
+   "id": 103,
+   "title": "Zajal the Sugarplum Fairy--and Friends!",
+   "description": "<p>Childern's Entertainment</p>",
+   "long_description": "<p>Original story [I'll create a \"steam\" one this year somehow!] with lively recorded music and bright costumes (for all) combine to entertain children and taller people with zest and humor.</p>",
+   "url": "https://www.facebook.com/pg/Miragebellydancetroupe/photos/?tab=album&album_id=399468737044",
+   "stage_id": 2,
+   "day_id": 3,
+   "start_time": "02:50 PM",
+   "end_time": "03:40 PM",
+   "photo": "/images/photos/103.jpg"
   }
  ],
  "special_events": [],

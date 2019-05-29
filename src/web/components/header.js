@@ -19,7 +19,6 @@ class Header extends React.Component {
         }
         <h1><img src="/images/bannerlogo.png" /></h1>
         <h2 key={ title }>{ this.trimTitle(title) }</h2>
-        <a href="http://ithacafestival.org" className="web"><i className="fa fa-external-link"></i>Full Site</a>
       </div>
     )
   }
