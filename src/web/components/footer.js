@@ -8,31 +8,27 @@ class Footer extends React.Component {
     const { match } = this.props
 
     const items = [
-      { link: '/dates', icon: 'clock-o', label: 'Dates' },
+      { link: '/dates', icon: 'clock-o', label: 'Days' },
       { link: '/locations', icon: 'map-marker', label: 'Stages' },
       { link: '/artists/', icon: 'headphones', label: 'Artists' },
-      { link: '/map', icon: 'globe', label: 'Map' },
-      { link: '/events', icon: 'calendar', label: 'Events' },
+      { link: '/map', icon: 'globe', label: 'Maps' },
+      // { link: '/events', icon: 'calendar', label: 'Events' },
       { link: '/vendors', icon: 'user', label: 'Vendors' },
-      { link: '/info', icon: 'info-circle', label: 'Info' },
+      { link: '/info', icon: 'info-circle', label: 'Info' }
     ]
 
     return (
       <div className="footer">
-        <ul>
-          { items.map((item, index) => {
-            return (
-              <li key={`tab_${index}`}>
-                <Route path={item.link} children={({ match }) => (
-                  <Link to={item.link} className={match ? 'active' : ''}>
-                    <i className={`fa fa-${item.icon}`}></i>
-                    {item.label}
-                  </Link>
-                )}/>
-              </li>
-            )
-          })}
-        </ul>
+        { items.map((item, index) => (
+          <div className="footer-item" key={`tab_${index}`}>
+            <Route path={item.link} children={({ match }) => (
+              <Link to={item.link} className={match ? 'active' : ''}>
+                <i className={`fa fa-${item.icon}`}></i>
+                {item.label}
+              </Link>
+            )}/>
+          </div>
+        ))}
       </div>
     )
   }

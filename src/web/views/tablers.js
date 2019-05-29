@@ -1,19 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import moment from 'moment'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
-import Performance from './performance'
-import { performancesSelector } from '../components/container/selectors'
 
-class Artists extends React.Component {
+class Commons extends React.Component {
 
   static contextTypes = {
     header: PropTypes.object
   }
 
   static propTypes = {
-    artists: PropTypes.array
+    vendors: PropTypes.array
   }
 
   state = {
@@ -32,26 +28,33 @@ class Artists extends React.Component {
       return 0
     }
 
-    const performances = this.props.performances.slice().filter(filter).sort(sort)
+    const vendors = this.props.vendors.slice().filter(filter).sort(sort)
 
     return (
       <div className="list-container">
         <div className="list-search">
-          <input ref={ node => this.input = node } type="text" placeholder="Search performers, genres, or locations" onChange={ this._handleChange.bind(this) } />
+          <input ref={ node => this.input = node } type="text" placeholder="Search vendor name" onChange={ this._handleChange.bind(this) } />
         </div>
         <div className="list">
-          { performances.length > 0 &&
+          { vendors.length > 0 &&
             <ul>
-              { performances.map((performance, index) => {
-                return <Performance key={`performance_${index}`} day={ true } performance={ performance } to={`/artists/${performance.id}`} />
-              }) }
+              { vendors.map((vendor, index) => {
+                return (
+                  <li key={`vendor_${index}`} className="list-item">
+                    <div className="list-item-description">
+                      <p className="time">{vendor.booth ? `Booth ${vendor.booth}` : ''}</p>
+                      <h4>{vendor.title}</h4>
+                    </div>
+                  </li>
+                )
+              })}
             </ul>
           }
-          { performances.length === 0 &&
+          { vendors.length === 0 &&
             <div className="empty-results-container">
               <h3 className="text-muted">
                 No Results.<br/>
-                <small>Try another search, they're plenty fast!</small>
+                <small>Try another search</small>
               </h3>
             </div>
           }
@@ -69,8 +72,8 @@ class Artists extends React.Component {
 
 }
 
-const mapStateToProps = (state, props) => ({
-  performances: performancesSelector(state.data, props)
+const mapStateToProps = state => ({
+  vendors: state.data.tablers
 })
 
-export default connect(mapStateToProps)(Artists)
+export default connect(mapStateToProps)(Commons)

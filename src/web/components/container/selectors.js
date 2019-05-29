@@ -3,11 +3,9 @@ import _ from 'lodash'
 import moment from 'moment'
 
 const sort = (a,b) => {
-  const a_start = moment(`${a.day.title} ${a.start_time}`)
-  const b_start = moment(`${b.day.title} ${b.start_time}`)
-  if(a_start < b_start) return -1
-  if(a_start > b_start) return 1
-  return 0
+  const a_start = moment(`${a.day.title} ${a.start_time}`, 'YYYY-MM-DD hh:mm A')
+  const b_start = moment(`${b.day.title} ${b.start_time}`, 'YYYY-MM-DD hh:mm A')
+  return a_start.diff(b_start) > 0 ? 1 : -1
 }
 
 export const performancesSelector = (data, params) => data.performances.filter(performance => {
@@ -44,7 +42,9 @@ export const performanceSelector = createSelector(
 
 export const sponsorSelector = createSelector(
   [sponsorsSelector, performanceSelector],
-  (sponsors, performance) => _.find(sponsors, { day: parseInt(performance.day_id), stage: parseInt(performance.stage_id) })
+  (sponsors, performance) => sponsors.filter(sponsor => {
+    return sponsor.day_id === parseInt(performance.day_id) && sponsor.stage_id === parseInt(performance.stage_id)
+  })
 )
 
 export const locationSelector = createSelector(

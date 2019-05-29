@@ -28,34 +28,34 @@ class Food extends React.Component {
 
     return (
       <div className="list-container">
-        <ul className="list">
-          <li className="list-search">
-            <input ref={ node => this.input = node } type="text" placeholder="Search vendor name or cuisine" onChange={ this._handleChange.bind(this) } />
-          </li>
-        </ul>
-        { vendors.length > 0 &&
-          <ul className="list">
-            { vendors.map((vendor, index) => {
-              return (
-                <li key={`vendor_${index}`} className="list-item">
-                  <div className="list-item-description">
-                    <p className="time"></p>
-                    <h4>{vendor.title}</h4>
-                    <p className="genre">{vendor.category}</p>
-                  </div>
-                </li>
-              )
-            })}
-          </ul>
-        }
-        { vendors.length === 0 &&
-          <div className="empty-results-container">
-            <h3 className="text-muted">
-              No Results.<br/>
-              <small>Try another search, they're plenty fast!</small>
-            </h3>
-          </div>
-        }
+        <div className="list-search">
+          <input ref={ node => this.input = node } type="text" placeholder="Search vendor name or cuisine" onChange={ this._handleChange.bind(this) } />
+        </div>
+        <div className="list">
+          { vendors.length > 0 &&
+            <ul>
+              { vendors.map((vendor, index) => {
+                return (
+                  <li key={`vendor_${index}`} className="list-item">
+                    <div className="list-item-description">
+                      <p className="time"></p>
+                      <h4>{vendor.title}</h4>
+                      <p className="genre">{vendor.category}</p>
+                    </div>
+                  </li>
+                )
+              })}
+            </ul>
+          }
+          { vendors.length === 0 &&
+            <div className="empty-results-container">
+              <h3 className="text-muted">
+                No Results.<br/>
+                <small>Try another search, they're plenty fast!</small>
+              </h3>
+            </div>
+          }
+        </div>
       </div>
     )
 

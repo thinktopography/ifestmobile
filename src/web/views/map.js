@@ -9,8 +9,11 @@ class Map extends React.Component {
 
   render() {
     return (
-      <div className="map" ref="map">
-        <img src="/images/map.png" />
+      <div className="map">
+        <h2>Festival Map</h2>
+        <img src="/images/2019-map.jpg" />
+        <h2>Commons Map</h2>
+        <img src="/images/2019-commons-map.jpg" />
       </div>
     )
   }

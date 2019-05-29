@@ -20,20 +20,20 @@ class Info extends React.Component {
     ]
 
     return (
-      <div>
-        <ul className="tabs">
+      <div className="info">
+        <div className="tabs">
           { items.map((item, index) => {
             return (
-              <li key={`tab_${index}`}>
+              <div key={`tab_${index}`}>
                 <Route exact path={item.link} children={({ match }) => (
                   <Link to={item.link} className={match ? 'active' : ''}>
                     {item.label}
                   </Link>
                 )}/>
-              </li>
+              </div>
             )
           })}
-        </ul>
+        </div>
         { items.map((item, index) => {
           return <Route exact path={ item.link } component={ item.component } key={`info_type_${index}`} />
         })}

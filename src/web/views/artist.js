@@ -13,11 +13,11 @@ class Artist extends React.Component {
   static propTypes = {
     match: PropTypes.object,
     performance: PropTypes.object,
-    sponsor: PropTypes.object
+    sponsors: PropTypes.array
   }
 
   render() {
-    const { performance, sponsor } = this.props
+    const { performance, sponsors } = this.props
     const { description, long_description, photo, stage, title, url } = performance
     const day = moment(performance.day.title)
     const styleProps = {
@@ -42,15 +42,19 @@ class Artist extends React.Component {
               {stage.title}
             </div>
           </div>
-          { sponsor &&
+          { sponsors &&
             <div className="performer-sponsor">
               <p>
                 Sponsored by
-                <a href={ sponsor.url }>{ sponsor.name }</a>
+                { sponsors.map((sponsor, index) => (
+                  <a key={`sponsor_${index}`} href={ sponsor.url }>{ sponsor.name }</a>
+                ))}
               </p>
             </div>
           }
-          <div dangerouslySetInnerHTML={{__html: long_description}} />
+          { long_description &&
+            <div dangerouslySetInnerHTML={{__html: long_description.replace(/\n/g, '<br />')}} />
+          }
           { url &&
             <a href={ url } target="_blank" className="performer-link">Visit performer website</a>
           }
@@ -77,7 +81,7 @@ class Artist extends React.Component {
 
 const mapStateToProps = (state, props) => ({
   performance: performanceSelector(state.data, props.match.params),
-  sponsor: sponsorSelector(state.data, props.match.params)
+  sponsors: sponsorSelector(state.data, props.match.params)
 })
 
 export default connect(mapStateToProps)(Artist)

@@ -13,25 +13,27 @@ class Day extends React.Component {
 
   static propTypes = {
     day: PropTypes.object,
-    performances: PropTypes.object
+    performances: PropTypes.array
   }
 
   render() {
     const { day, performances } = this.props
     return (
       <div className="list-container">
-        { performances.map((segment, index) => {
-          const sponsor_names = (segment.sponsors) ? segment.sponsors.map(sponsor => sponsor.name).join(' and ') : null
-          return (
-            <ul key={`location_${index}`} className="list">
-              <li className={`list-label ${segment.location.title.replace(' ', '-').toLowerCase()}`}>{segment.location.title}</li>
-              { segment.sponsors.length > 0 && <li className="sponsor-list-label" style={{color: segment.location.color}}>Sponsored by {sponsor_names}</li> }
-              { segment.performances.map((performance, index) => {
-                return <Performance key={`performance_${index}`} performance={ performance } to={`/dates/${day.id}/artists/${performance.id}`} />
-              }) }
-            </ul>
-          )
-        }) }
+        <div className="list">
+          { performances.map((segment, index) => {
+            const sponsor_names = (segment.sponsors) ? segment.sponsors.map(sponsor => sponsor.name).join(' and ') : null
+            return (
+              <ul key={`location_${index}`}>
+                <li className={`list-label ${segment.location.title.replace(' ', '-').toLowerCase()}`}>{segment.location.title}</li>
+                { segment.sponsors.length > 0 && <li className="sponsor-list-label" style={{color: segment.location.color}}>Sponsored by {sponsor_names}</li> }
+                { segment.performances.map((performance, index) => {
+                  return <Performance key={`performance_${index}`} performance={ performance } to={`/dates/${day.id}/artists/${performance.id}`} />
+                }) }
+              </ul>
+            )
+          }) }
+        </div>
       </div>
     )
   }

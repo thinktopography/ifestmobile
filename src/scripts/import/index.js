@@ -16,6 +16,7 @@ const perform = async () => {
   const craft = getData(workbook, 'Craft Vendors')
   const commons = getData(workbook, 'Commons Vendors')
   const faq = getData(workbook, 'FAQ')
+  const tablers = getData(workbook, 'Tablers')
   const locations = stages.map((location, index) => ({
     id: index + 1,
     title: _.startCase(location.name)
@@ -49,12 +50,14 @@ const perform = async () => {
   }
 
   const getPhoto = async (id, url) => {
+    console.log(`Downloading ${url}`)
     const data = await request(url, { encoding: null })
     const $ = cheerio.load(data.toString())
     const images = []
     $('img').map(function(i, el) {
       images.push(el.attribs.src)
     })
+    console.log(`Downloading ${images[0]}`)
     const image = await request(images[0], { encoding: null })
     fs.writeFileSync(path.join('src','web','public','images','photos',`${id}.jpg`), image)
     return '/'+path.join('images','photos',`${id}.jpg`)
@@ -82,6 +85,10 @@ const perform = async () => {
       description: vendor.description
     })),
     commons_vendors: commons.map(vendor => ({
+      booth: vendor.booth,
+      title: _.startCase(vendor.name)
+    })),
+    tablers: tablers.map(vendor => ({
       booth: vendor.booth,
       title: _.startCase(vendor.name)
     })),
@@ -119,7 +126,7 @@ const getData = (workbook, sheet) => {
   })
   const headers = data[0].map(value => value.replace(' ', '_').toLowerCase())
   return data.slice(1).filter(data => {
-    return data[0] && data[0].length > 0
+    return data[0] && `data[0]`.length > 0
   }).reduce((rows, data) => [
     ...rows,
     headers.reduce((row, header, index) => ({

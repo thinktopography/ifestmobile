@@ -4,7 +4,7 @@ export const loadData = () => ({
   type: 'API_REQUEST',
   method: 'GET',
   endpoint: '/static.json',
-  query: { t: 2019 },
+  query: { t: 201905290637 },
   request: actionTypes.LOAD_DATA_REQUEST,
   success: actionTypes.LOAD_DATA_SUCCESS,
   failure: actionTypes.LOAD_FATA_FAILURE

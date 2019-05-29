@@ -113,15 +113,9 @@ div.application {
   div.footer {
     background-color: #FFF;
     box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.176);
-    ul {
-      overflow: hidden;
-      margin: 0;
-      padding: 0;
-    }
-    li {
-      float: left;
-      width: 14.28%;
-      list-style: none;
+    display: flex;
+    .footer-item {
+      flex: 1;
       text-align: center;
       font-size: 11px;
       padding: 3px;
@@ -129,7 +123,7 @@ div.application {
     a.active {
       color: #FFF;
     }
-    li.active a {
+    .active a {
       color: #FFF;
     }
     a {
@@ -143,7 +137,7 @@ div.application {
       display: block;
       line-height: 24px;
     }
-    ul li {
+    .footer-item {
       &:nth-child(1) a.active, &.active:nth-child(1) a {
         background-color: #295DAB;
       }
@@ -169,26 +163,57 @@ div.application {
   }
 }
 
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  .tabs + div {
+    flex: 1;
+    -webkit-backface-visibility: hidden;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+  }
+}
+
 
 .list-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.map {
+  h2 {
+    text-align: center;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+.map,.list {
   flex: 1;
   -webkit-backface-visibility: hidden;
   -webkit-overflow-scrolling: touch;
   scroll-behavior: smooth;
   overflow-y: scroll;
 }
-ul.list {
-  margin: 0; padding: 0;
+.list-search {
+  background-color: #EEE; padding: 5px; text-align: center; text-transform: uppercase;
+  input { width: 100%; border-radius: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border: 1px solid #DDD; padding: 5px 15px; outline: none; }
+}
+
+.list {
+  ul { margin: 0; padding: 0; }
   li { list-style: none; border-bottom: 1px solid #DDD; }
   img.event { max-width: 30%; float: right; }
   li.list-item {  background-color: #FFF; }
   li.list-label { color: #FFF; padding: 11px; text-align: center; text-transform: uppercase; font-family: "Arvo", serif; font-weight: 700; font-size: 16px; }
-  ul.list.labelled li.list-label { background-color: #295DAB; color: #FFF; padding: 11px; text-align: center; text-transform: uppercase; font-family: "Arvo", serif; font-weight: 700; font-size: 16px; }
-  li.list-search { background-color: #EEE; padding: 5px; text-align: center; text-transform: uppercase; }
+  .labelled li.list-label { background-color: #295DAB; color: #FFF; padding: 11px; text-align: center; text-transform: uppercase; font-family: "Arvo", serif; font-weight: 700; font-size: 16px; }
   div.list-item-image { float: left; min-height: 100px; }
   div.list-item-details { padding: 5px; }
   div.list-item-description { padding: 10px; }
-  input { width: 100%; border-radius: 15px; -moz-border-radius: 15px; -webkit-border-radius: 15px; border: 1px solid #DDD; padding: 5px 15px; }
   a { text-decoration: none; color: #000; overflow: hidden; position: relative; display: block; outline: none; }
   div.list-item-image img { width: 100%; }
   h4 { margin: 0; }
@@ -220,16 +245,18 @@ div.date-tiles {
   h4 { text-transform: uppercase; margin: 0; }
 }
 
-ul.tabs {
-  margin: 0; padding: 0; overflow: hidden; width: 100%;
-  li { list-style: none; float: left; width: 33.33%; }
-  li:last-child a { border: none; }
-  li:nth-child(1) a.active, ul.tabs li:nth-child(1).active a { background-color: #295DAB; }
-  li:nth-child(2) a.active, ul.tabs li:nth-child(2).active a { background-color: #7A3182; }
-  li:nth-child(3) a.active, ul.tabs li:nth-child(3).active a { background-color: #C32021; }
-  li:nth-child(4) a.active, ul.tabs li:nth-child(4).active a { background-color: #008741; }
-  li:nth-child(5) a.active, ul.tabs li:nth-child(5).active a { background-color: #EF712E; }
-  li:nth-child(6) a.active, ul.tabs li:nth-child(6).active a { background-color: #FFC616; }
+.tabs {
+  display: flex;
+  div {
+    flex: 1;
+    &:last-child a { border: none; }
+    &:nth-child(1) a.active, ul.tabs li:nth-child(1).active a { background-color: #295DAB; }
+    &:nth-child(2) a.active, ul.tabs li:nth-child(2).active a { background-color: #7A3182; }
+    &:nth-child(3) a.active, ul.tabs li:nth-child(3).active a { background-color: #C32021; }
+    &:nth-child(4) a.active, ul.tabs li:nth-child(4).active a { background-color: #008741; }
+    &:nth-child(5) a.active, ul.tabs li:nth-child(5).active a { background-color: #EF712E; }
+    &:nth-child(6) a.active, ul.tabs li:nth-child(6).active a { background-color: #FFC616; }
+  }
   a { display: block; text-decoration: none; padding: 10px; text-align: center; border-right: 1px solid #FFF; background-color: #AAA; color: #FFF; font-family: "Arvo", serif; font-weight: 700; }
 }
 
@@ -260,25 +287,25 @@ div.performer {
   a.performer-link { text-decoration: none !important; border-radius: 5px; padding: 10px; background-color: rgb(195, 32, 33); color: #FFF; font-size: 12px; text-transform: uppercase; text-align: center; display: block; margin-bottom: 10px; }
 }
 
-div.map {
-  position: fixed;
-  top: 50px;
-  bottom: 52px;
-  right: 0;
-  left: 0;
-}
-div.map img {
-  width: 100%;
+div.vendors {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 div.about { padding: 10px;}
 div.about p, div.info h4, h5 { text-align: center; }
 
-div.faq { padding: 10px; }
-div.faq div.question { margin: 0 0 20px; }
-div.faq h2 { margin: 0; }
-div.faq p { margin: 0; }
-
+div.faq {
+  padding: 10px;
+  -webkit-backface-visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  overflow-y: scroll;
+  div.question { margin: 0 0 20px; }
+  h2 { margin: 0; }
+  p { margin: 0; }
+}
 h1,h2,h3,h4 { font-family: "Arvo", serif; font-weight: 700; }
 p,li,input { font-family: 'Lato', sans-serif; font-weight: 400; }
 

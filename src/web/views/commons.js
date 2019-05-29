@@ -20,11 +20,11 @@ class Commons extends React.Component {
 
     const { q } = this.state
 
-    const filter = (item) => (q === '' || item.name.toLowerCase().search(q.toLowerCase()) >= 0)
+    const filter = (item) => (q === '' || item.title.toLowerCase().search(q.toLowerCase()) >= 0)
 
     const sort = (a,b) => {
-      if(a.name.toLowerCase() < b.name.toLowerCase()) return -1
-      if(a.name.toLowerCase() > b.name.toLowerCase()) return 1
+      if(a.title.toLowerCase() < b.title.toLowerCase()) return -1
+      if(a.title.toLowerCase() > b.title.toLowerCase()) return 1
       return 0
     }
 
@@ -32,33 +32,33 @@ class Commons extends React.Component {
 
     return (
       <div className="list-container">
-        <ul className="list">
-          <li className="list-search">
-            <input ref={ node => this.input = node } type="text" placeholder="Search vendor name" onChange={ this._handleChange.bind(this) } />
-          </li>
-        </ul>
-        { vendors.length > 0 &&
-          <ul className="list">
-            { vendors.map((vendor, index) => {
-              return (
-                <li key={`vendor_${index}`} className="list-item">
-                  <div className="list-item-description">
-                    <p className="time">{vendor.booth ? `Booth ${vendor.booth}` : ''}</p>
-                    <h4>{vendor.name}</h4>
-                  </div>
-                </li>
-              )
-            })}
-          </ul>
-        }
-        { vendors.length === 0 &&
-          <div className="empty-results-container">
-            <h3 className="text-muted">
-              No Results.<br/>
-              <small>Try another search</small>
-            </h3>
-          </div>
-        }
+        <div className="list-search">
+          <input ref={ node => this.input = node } type="text" placeholder="Search vendor name" onChange={ this._handleChange.bind(this) } />
+        </div>
+        <div className="list">
+          { vendors.length > 0 &&
+            <ul>
+              { vendors.map((vendor, index) => {
+                return (
+                  <li key={`vendor_${index}`} className="list-item">
+                    <div className="list-item-description">
+                      <p className="time">{vendor.booth ? `Booth ${vendor.booth}` : ''}</p>
+                      <h4>{vendor.title}</h4>
+                    </div>
+                  </li>
+                )
+              })}
+            </ul>
+          }
+          { vendors.length === 0 &&
+            <div className="empty-results-container">
+              <h3 className="text-muted">
+                No Results.<br/>
+                <small>Try another search</small>
+              </h3>
+            </div>
+          }
+        </div>
       </div>
     )
 
