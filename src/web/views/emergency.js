@@ -23,6 +23,20 @@ class Emergency extends React.Component {
     )
   }
 
+  componentDidMount() {
+    this.context.header.set({
+      pageTitle: 'Emergency',
+      title: 'Info',
+      back: null
+    })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: '/info/emergency',
+      title: 'Emergency'
+    })
+    ga.send('pageview')
+  }
+
 }
 
 export default Emergency

@@ -18,6 +18,20 @@ class Map extends React.Component {
     )
   }
 
+  componentDidMount() {
+    this.context.header.set({
+      pageTitle: 'Maps',
+      title: 'Maps',
+      back: null
+    })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: '/maps',
+      title: 'Maps'
+    })
+    ga.send('pageview')
+  }
+
 }
 
 export default Map

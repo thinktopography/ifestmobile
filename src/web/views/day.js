@@ -28,7 +28,7 @@ class Day extends React.Component {
                 <li className={`list-label ${segment.location.title.replace(' ', '-').toLowerCase()}`}>{segment.location.title}</li>
                 { segment.sponsors.length > 0 && <li className="sponsor-list-label" style={{color: segment.location.color}}>Sponsored by {sponsor_names}</li> }
                 { segment.performances.map((performance, index) => {
-                  return <Performance key={`performance_${index}`} performance={ performance } to={`/dates/${day.id}/artists/${performance.id}`} />
+                  return <Performance key={`performance_${index}`} performance={ performance } to={`/days/${day.id}/artists/${performance.id}`} />
                 }) }
               </ul>
             )
@@ -39,10 +39,18 @@ class Day extends React.Component {
   }
 
   componentDidMount() {
+    const { day } = this.props
     this.context.header.set({
+      pageTitle: moment(this.props.day.title).format('dddd, MMM DD'),
       title: moment(this.props.day.title).format('dddd, MMM DD'),
-      back: '/dates'
+      back: '/days'
     })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: `/days/${day.id}`,
+      title: moment(this.props.day.title).format('dddd, MMM DD')
+    })
+    ga.send('pageview')
   }
 
 }

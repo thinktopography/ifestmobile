@@ -8,8 +8,8 @@ class Footer extends React.Component {
     const { match } = this.props
 
     const items = [
-      { link: '/dates', icon: 'clock-o', label: 'Days' },
-      { link: '/locations', icon: 'map-marker', label: 'Stages' },
+      { link: '/days', icon: 'clock-o', label: 'Days' },
+      { link: '/stages', icon: 'map-marker', label: 'Stages' },
       { link: '/artists/', icon: 'headphones', label: 'Artists' },
       { link: '/map', icon: 'globe', label: 'Maps' },
       // { link: '/events', icon: 'calendar', label: 'Events' },

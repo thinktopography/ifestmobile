@@ -29,7 +29,7 @@ class Days extends React.Component {
         { days.sort(sort).map((day, index) => {
           const timestamp = moment(day.title)
           return (
-            <Link key={`day_${index}`} to={`/dates/${day.id}`} className={timestamp.format('dddd').replace(' ', '-').toLowerCase()}>
+            <Link key={`day_${index}`} to={`/days/${day.id}`} className={timestamp.format('dddd').replace(' ', '-').toLowerCase()}>
               <div className='date-headings-wrapper'>
                 <h3>{timestamp.format('MMM')}</h3>
                 <h2>{timestamp.format('DD')}</h2>
@@ -41,6 +41,20 @@ class Days extends React.Component {
       </div>
     )
 
+  }
+
+  componentDidMount() {
+    this.context.header.set({
+      pageTitle: 'Days',
+      title: 'Mobile Schedule',
+      back: null
+    })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: '/days',
+      title: 'Days'
+    })
+    ga.send('pageview')
   }
 
 }

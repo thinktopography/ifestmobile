@@ -25,12 +25,12 @@ const App = () => (
           <Route render={({ location }) => (
             <Application key={location.key}>
               <Route exact path="/" component={ Days } />
-              <Route exact path="/dates" component={ Days } />
-              <Route exact path="/dates/:date_id/artists/:id" component={ Artist } />
-              <Route exact path="/dates/:id" component={ Day } />
-              <Route exact path="/locations" component={ Locations } />
-              <Route exact path="/locations/:location_id/artists/:id" component={ Artist } />
-              <Route exact path="/locations/:id" component={ Location } />
+              <Route exact path="/days" component={ Days } />
+              <Route exact path="/days/:date_id/artists/:id" component={ Artist } />
+              <Route exact path="/days/:id" component={ Day } />
+              <Route exact path="/stages" component={ Locations } />
+              <Route exact path="/stages/:location_id/artists/:id" component={ Artist } />
+              <Route exact path="/stages/:id" component={ Location } />
               <Route exact path="/artists" component={ Artists } />
               <Route exact path="/artists/:id" component={ Artist } />
               <Route exact path="/map" component={ Map } />

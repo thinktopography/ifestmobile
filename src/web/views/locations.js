@@ -26,13 +26,27 @@ class Locations extends React.Component {
     return (
       <div className="stage-tiles">
         { locations.sort(sort).map((location, index) => (
-          <Link key={`location_${index}`} to={`/locations/${location.id}`} className={location.title.replace(' ', '-').toLowerCase()}>
+          <Link key={`location_${index}`} to={`/stages/${location.id}`} className={location.title.replace(' ', '-').toLowerCase()}>
             <h4>{location.title}</h4>
           </Link>
         )) }
       </div>
     )
 
+  }
+
+  componentDidMount() {
+    this.context.header.set({
+      pageTitle: 'Stages',
+      title: 'Mobile Schedule',
+      back: null
+    })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: '/stages',
+      title: 'Stages'
+    })
+    ga.send('pageview')
   }
 
 }

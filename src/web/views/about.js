@@ -55,6 +55,20 @@ class About extends React.Component {
     )
   }
 
+  componentDidMount() {
+    this.context.header.set({
+      pageTitle: 'About',
+      title: 'Info',
+      back: null
+    })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: '/info',
+      title: 'About'
+    })
+    ga.send('pageview')
+  }
+
 }
 
 export default About

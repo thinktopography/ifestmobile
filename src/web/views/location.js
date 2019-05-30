@@ -32,7 +32,7 @@ class Location extends React.Component {
                   </li>
                 }
                 { segment.performances.map((performance, index) => {
-                  return <Performance key={`performance_${index}`} performance={ performance } to={`/locations/${location.id}/artists/${performance.id}`} />
+                  return <Performance key={`performance_${index}`} performance={ performance } to={`/stages/${location.id}/artists/${performance.id}`} />
                 }) }
               </ul>
             )
@@ -43,10 +43,18 @@ class Location extends React.Component {
   }
 
   componentDidMount() {
+    const { location } = this.props
     this.context.header.set({
-      title: this.props.location.title,
-      back: '/locations'
+      pageTitle: location.title,
+      title: location.title,
+      back: '/stages'
     })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: `/stages/${location.id}`,
+      title: location.title
+    })
+    ga.send('pageview')
   }
 
 }

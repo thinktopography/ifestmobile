@@ -64,16 +64,24 @@ class Artist extends React.Component {
   }
 
   componentDidMount() {
+    const { performance } = this.props
     const { params } = this.props.match
     this.context.header.set({
-      title: 'Artist Profile',
+      pageTitle: performance.title,
+      title: 'Performance',
       back: this._back(params)
     })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: `/artists/${performance.id}`,
+      title: performance.title
+    })
+    ga.send('pageview')
   }
 
   _back(params) {
-    if(params.location_id) return `/locations/${params.location_id}`
-    if(params.date_id) return `/dates/${params.date_id}`
+    if(params.location_id) return `/stages/${params.location_id}`
+    if(params.date_id) return `/days/${params.date_id}`
     return '/artists'
   }
 

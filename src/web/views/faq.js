@@ -25,6 +25,20 @@ class Faq extends React.Component {
     )
   }
 
+  componentDidMount() {
+    this.context.header.set({
+      pageTitle: 'FAQ',
+      title: 'Info',
+      back: null
+    })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: '/info/faq',
+      title: 'FAQ'
+    })
+    ga.send('pageview')
+  }
+
 }
 
 const mapStateToProps = (state, props) => ({

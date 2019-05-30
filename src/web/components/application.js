@@ -14,6 +14,7 @@ class Application extends React.Component {
     this.state = {
       header: {
         back: null,
+        pageTitle: 'Mobile Schedule',
         title: 'Mobile Schedule'
       }
     }
@@ -31,6 +32,13 @@ class Application extends React.Component {
         <Footer />
       </div>
     )
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    const { header } = this.state
+    if(header.pageTitle !== prevState.header.pageTitle) {
+      document.getElementsByTagName('title')[0].text = header.pageTitle
+    }
   }
 
   getChildContext() {

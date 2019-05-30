@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import _ from 'lodash'
 
 class Commons extends React.Component {
 
@@ -15,6 +16,9 @@ class Commons extends React.Component {
   state = {
     q: ''
   }
+
+  _handleChange = this._handleChange.bind(this)
+  _handleEvent = _.debounce(this._handleEvent.bind(this), 400, { trailing: true })
 
   render() {
 
@@ -33,7 +37,7 @@ class Commons extends React.Component {
     return (
       <div className="list-container">
         <div className="list-search">
-          <input ref={ node => this.input = node } type="text" placeholder="Search vendor name" onChange={ this._handleChange.bind(this) } />
+          <input ref={ node => this.input = node } type="text" placeholder="Search vendor name" onChange={ this._handleChange } />
         </div>
         <div className="list">
           { vendors.length > 0 &&
@@ -64,10 +68,30 @@ class Commons extends React.Component {
 
   }
 
+  componentDidMount() {
+    this.context.header.set({
+      pageTitle: 'Tablers',
+      title: 'Vendors',
+      back: null
+    })
+    const ga = window.ga.getAll()[0]
+    ga.set({
+      page: '/vendors/tablers',
+      title: 'Tablers'
+    })
+    ga.send('pageview')
+  }
+
   _handleChange() {
     this.setState({
       q: this.input.value
     })
+    this._handleEvent()
+  }
+
+  _handleEvent() {
+    const ga = window.ga.getAll()[0]
+    ga.send('event', 'tablers', 'search', this.input.value)
   }
 
 }
